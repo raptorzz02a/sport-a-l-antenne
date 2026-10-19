@@ -1,0 +1,34 @@
+name: Mise à jour du programme
+
+on:
+  schedule:
+    - cron: "15 */4 * * *"   # toutes les 4 heures
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Construire events.json et sports.ics
+        run: python3 scripts/build_data.py
+      - name: Publier les données
+        run: |
+          git config user.name "programme-bot"
+          git config user.email "programme-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "Programme mis à jour"
+          git push

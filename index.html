@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sport à l'antenne</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* Layout : une grille horaire façon conducteur de régie, filtres en tête, journée par journée */
+:root{
+  --bg:#f2f4f7; --panel:#ffffff; --fg:#141a26; --muted:#5a6475; --line:#dde2ea;
+  --accent:#1747c9; --accent-soft:#e3eafc; --live:#d92f2a; --live-soft:#fde7e6;
+  --chip:#e9edf3;
+  --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d121c; --panel:#151c2a; --fg:#e8ecf3; --muted:#97a2b5; --line:#263043;
+  --accent:#7ea0ff; --accent-soft:#1d2a4a; --live:#ff6a62; --live-soft:#3a1a1c; --chip:#1d2534; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d121c; --panel:#151c2a; --fg:#e8ecf3; --muted:#97a2b5; --line:#263043;
+  --accent:#7ea0ff; --accent-soft:#1d2a4a; --live:#ff6a62; --live-soft:#3a1a1c; --chip:#1d2534; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--fg)}
+body{margin:0;font:15px/1.45 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+.wrap{max-width:880px;margin:0 auto}
+header{padding-block:22px 10px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:end;justify-content:space-between}
+h1{font:700 2.1rem/1 var(--display);letter-spacing:.01em;margin:0;text-transform:uppercase;text-wrap:balance}
+h1 span{color:var(--accent)}
+.meta{color:var(--muted);font-size:.85rem}
+.notice{background:var(--accent-soft);border-radius:10px;padding:10px 14px;font-size:.88rem;margin-block:4px 10px}
+.notice:empty{display:none}
+.filters{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;display:grid;gap:8px;border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.lbl{font:600 .72rem/1 var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);width:68px;flex:none}
+.chip{border:1px solid transparent;background:var(--chip);color:var(--fg);border-radius:999px;padding:5px 11px;font:500 .85rem var(--body);cursor:pointer}
+.chip[aria-pressed="false"]{opacity:.45;text-decoration:line-through}
+.chip:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tools{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+#q{flex:1 1 220px;min-width:0;border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:8px;padding:8px 11px;font:inherit}
+label.tg{display:flex;gap:6px;align-items:center;font-size:.88rem;color:var(--muted);cursor:pointer}
+.btn{border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:8px;padding:7px 11px;font:500 .85rem var(--body);cursor:pointer}
+h2{font:600 1.25rem/1 var(--display);text-transform:uppercase;letter-spacing:.04em;margin:26px 0 8px;display:flex;gap:10px;align-items:baseline}
+h2 small{font:400 .82rem var(--body);color:var(--muted);text-transform:none;letter-spacing:0}
+.list{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.ev{display:grid;grid-template-columns:62px 1fr auto;gap:4px 14px;padding:11px 14px;border-top:1px solid var(--line);align-items:start}
+.ev:first-child{border-top:0}
+.ev.now{background:var(--live-soft)}
+.t{font:600 1.25rem/1.1 var(--display);font-variant-numeric:tabular-nums}
+.t small{display:block;font:400 .74rem var(--body);color:var(--muted)}
+.body{min-width:0}
+.title{font-weight:600;overflow-wrap:anywhere}
+.sub{color:var(--muted);font-size:.86rem;overflow-wrap:anywhere}
+.desc{color:var(--muted);font-size:.82rem;margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:3px}
+.tag{font:600 .7rem/1 var(--body);text-transform:uppercase;letter-spacing:.07em;padding:4px 7px;border-radius:5px;background:var(--chip);color:var(--muted)}
+.tag.sport{background:var(--accent-soft);color:var(--accent)}
+.tag.direct{background:var(--live);color:#fff}
+.tag.mag{background:transparent;border:1px solid var(--line)}
+.ch{text-align:right;font:600 .95rem/1.15 var(--display);text-transform:uppercase;letter-spacing:.02em;max-width:130px}
+.ch small{display:block;font:400 .74rem var(--body);color:var(--muted);text-transform:none}
+.empty{padding:28px 16px;text-align:center;color:var(--muted)}
+.ics{margin-top:28px;padding:16px;border:1px dashed var(--line);border-radius:12px;font-size:.9rem}
+.ics code{background:var(--chip);padding:2px 6px;border-radius:5px;overflow-wrap:anywhere}
+@media (max-width:520px){.ev{grid-template-columns:52px 1fr}.ch{grid-column:2;text-align:left;max-width:none}.ch small{display:inline;margin-left:6px}.lbl{width:100%}}
+@media (prefers-reduced-motion:no-preference){.ev.now .t{animation:blink 2s ease-in-out infinite}@keyframes blink{50%{color:var(--live)}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Sport <span>à l'antenne</span></h1>
+      <div class="meta" id="meta">Chargement du programme…</div>
+    </div>
+    <button class="btn" id="reset" type="button">Tout réafficher</button>
+  </header>
+  <div class="notice" id="notice"></div>
+  <div class="filters">
+    <div class="row" id="f-sport"><span class="lbl">Sports</span></div>
+    <div class="row" id="f-bc"><span class="lbl">Chaînes</span></div>
+    <div class="tools">
+      <input id="q" type="search" placeholder="Équipe, compétition, pilote…" aria-label="Rechercher">
+      <label class="tg"><input type="checkbox" id="mag"> Magazines</label>
+      <label class="tg"><input type="checkbox" id="past"> Déjà terminés</label>
+    </div>
+  </div>
+  <main id="out"></main>
+  <section class="ics" id="ics" hidden>
+    <strong>Recevoir une alerte 15 min avant chaque diffusion.</strong>
+    Abonnez votre agenda (Google Agenda : « Autres agendas › À partir de l'URL » ; iPhone : Réglages › Calendrier › Comptes › Ajouter un calendrier avec abonnement) à cette adresse :<br>
+    <code id="ics-url"></code> <button class="btn" id="copy" type="button">Copier</button>
+  </section>
+</div>
+<script id="embedded-data" type="application/json">null</script>
+<script>
+const TZ = "Europe/Paris";
+const ORDER = ["foot","basket","rugby","hand","hockey","darts","petanque","mma","motogp","f1"];
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem("pts:"+k); return v ? JSON.parse(v) : d }catch(e){ return d } },
+  set(k, v){ try{ localStorage.setItem("pts:"+k, JSON.stringify(v)) }catch(e){} }
+};
+const st = { sports:null, bcs:null, q:"", mag:store.get("mag",false), past:false };
+let DATA = null;
+
+const fmt = (o) => new Intl.DateTimeFormat("fr-FR", Object.assign({timeZone:TZ}, o));
+const hhmm = fmt({hour:"2-digit", minute:"2-digit"});
+const dayKey = fmt({year:"numeric", month:"2-digit", day:"2-digit"});
+const dayLong = fmt({weekday:"long", day:"numeric", month:"long"});
+const norm = s => (s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+const esc = s => (s||"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function chips(rowId, items, sel, key){
+  const row = document.getElementById(rowId);
+  row.querySelectorAll(".chip").forEach(c => c.remove());
+  items.forEach(([id, label]) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "chip"; b.textContent = label;
+    b.setAttribute("aria-pressed", sel.has(id));
+    b.onclick = () => { sel.has(id) ? sel.delete(id) : sel.add(id); store.set(key, [...sel]); b.setAttribute("aria-pressed", sel.has(id)); render(); };
+    row.appendChild(b);
+  });
+}
+
+function relDay(k, now){
+  const today = dayKey.format(now), tomorrow = dayKey.format(new Date(+now + 864e5));
+  return k === today ? "Aujourd'hui" : k === tomorrow ? "Demain" : null;
+}
+
+function render(){
+  const now = new Date();
+  const q = norm(st.q).trim();
+  const evs = DATA.events.filter(e => {
+    if (!st.sports.has(e.sport) || !st.bcs.has(e.broadcaster)) return false;
+    if (!st.mag && e.kind === "magazine") return false;
+    if (!st.past && new Date(e.end) < now) return false;
+    if (q && !norm([e.title,e.subtitle,e.desc,e.channel].join(" ")).includes(q)) return false;
+    return true;
+  });
+  const groups = new Map();
+  evs.forEach(e => { const k = dayKey.format(new Date(e.start)); if(!groups.has(k)) groups.set(k, []); groups.get(k).push(e); });
+  const out = document.getElementById("out");
+  if (!evs.length){ out.innerHTML = '<h2>Programme</h2><div class="list"><div class="empty">Aucune diffusion ne correspond à ces filtres.</div></div>'; return; }
+  let html = "";
+  for (const [k, list] of groups){
+    const d = new Date(list[0].start);
+    const rel = relDay(k, now), long = dayLong.format(d);
+    html += `<h2>${rel || long}<small>${rel ? long + " · " : ""}${list.length} diffusion${list.length>1?"s":""}</small></h2><div class="list">`;
+    for (const e of list){
+      const s = new Date(e.start), en = new Date(e.end), live = s <= now && now < en;
+      const kind = e.kind === "direct" ? '<span class="tag direct">Direct</span>' : e.kind === "magazine" ? '<span class="tag mag">Magazine</span>' : "";
+      html += `<div class="ev${live?" now":""}">
+        <div class="t">${hhmm.format(s)}<small>${live ? "en cours" : "→ " + hhmm.format(en)}</small></div>
+        <div class="body"><div class="tags"><span class="tag sport">${esc(DATA.sports[e.sport]||e.sport)}</span>${kind}</div>
+          <div class="title">${esc(e.title)}</div>${e.subtitle?`<div class="sub">${esc(e.subtitle)}</div>`:""}${e.desc?`<div class="desc">${esc(e.desc)}</div>`:""}</div>
+        <div class="ch">${esc(e.broadcaster)}${e.channel!==e.broadcaster?`<small>${esc(e.channel)}</small>`:""}</div></div>`;
+    }
+    html += "</div>";
+  }
+  out.innerHTML = html;
+}
+
+function init(data){
+  DATA = data;
+  const sports = ORDER.filter(k => data.sports[k]).map(k => [k, data.sports[k]]);
+  const bcs = data.broadcasters.map(b => [b, b]);
+  st.sports = new Set(store.get("sports", sports.map(s => s[0])));
+  st.bcs = new Set(store.get("bcs", bcs.map(b => b[0])));
+  chips("f-sport", sports, st.sports, "sports");
+  chips("f-bc", bcs, st.bcs, "bcs");
+  const g = new Date(data.generated);
+  document.getElementById("meta").textContent =
+    `${data.events.length} diffusions repérées · mis à jour le ${dayLong.format(g)} à ${hhmm.format(g)}`;
+  if (data.notice) document.getElementById("notice").textContent = data.notice;
+  const mag = document.getElementById("mag"); mag.checked = st.mag;
+  mag.onchange = () => { st.mag = mag.checked; store.set("mag", st.mag); render(); };
+  const past = document.getElementById("past"); past.onchange = () => { st.past = past.checked; render(); };
+  document.getElementById("q").oninput = (ev) => { st.q = ev.target.value; render(); };
+  document.getElementById("reset").onclick = () => {
+    sports.forEach(s => st.sports.add(s[0])); bcs.forEach(b => st.bcs.add(b[0]));
+    store.set("sports", [...st.sports]); store.set("bcs", [...st.bcs]);
+    chips("f-sport", sports, st.sports, "sports"); chips("f-bc", bcs, st.bcs, "bcs"); render();
+  };
+  if (location.protocol.startsWith("http") && !data.embedded){
+    const url = new URL("data/sports.ics", location.href).href;
+    document.getElementById("ics-url").textContent = url;
+    document.getElementById("ics").hidden = false;
+    document.getElementById("copy").onclick = () => navigator.clipboard.writeText(url).then(
+      () => document.getElementById("copy").textContent = "Copié", () => {});
+  }
+  render();
+  setInterval(render, 60000);
+}
+
+(async () => {
+  const emb = JSON.parse(document.getElementById("embedded-data").textContent);
+  if (emb) return init(emb);
+  try {
+    const r = await fetch("data/events.json?t=" + Date.now());
+    if (!r.ok) throw new Error(r.status);
+    init(await r.json());
+  } catch (e) {
+    document.getElementById("meta").textContent = "Programme introuvable : le fichier data/events.json n'a pas encore été généré.";
+  }
+})();
+</script>
+</body>
+</html>
