@@ -260,7 +260,7 @@ def write_ics(events, path, sport_labels):
              "X-WR-CALNAME:Sport à la TV", "X-WR-TIMEZONE:Europe/Paris", "REFRESH-INTERVAL;VALUE=DURATION:PT6H",
              "X-PUBLISHED-TTL:PT6H"]
     for e in events:
-        if e["kind"] == "magazine":
+        if e["kind"] in ("magazine", "rediff"):
             continue
         uid = hashlib.sha1(f'{e["start"]}{e["channel"]}{e["title"]}'.encode()).hexdigest()
         f = lambda s: s.replace("-", "").replace(":", "")[:15] + "Z"  # noqa: E731
@@ -299,6 +299,19 @@ def dedupe(events):
     return out
 
 
+def mark_reruns(events):
+    """Une meme affiche deja programmee plus tot (meme diffuseur) devient une rediffusion."""
+    seen = set()
+    for e in sorted(events, key=lambda e: e["start"]):
+        if e["kind"] == "magazine" or e["source"] == "euroleague":
+            continue
+        k = (e["broadcaster"], norm(e["title"]), norm(e["subtitle"]))
+        if k in seen and not re.search(r"^(football|basket-?ball|handball)$", k[1]):
+            e["kind"] = "rediff"
+        seen.add(k)
+    return events
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--xmltv", help="fichier XMLTV local (sinon telechargement)")
@@ -335,7 +348,7 @@ def main():
         events += euroleague(now)
 
     cutoff = now - dt.timedelta(hours=6)
-    events = [e for e in dedupe(events) if dt.datetime.fromisoformat(e["end"].replace("Z", "+00:00")) >= cutoff]
+    events = [e for e in mark_reruns(dedupe(events)) if dt.datetime.fromisoformat(e["end"].replace("Z", "+00:00")) >= cutoff]
     labels = {k: lbl for k, lbl, _ in SPORTS}
     os.makedirs(args.out, exist_ok=True)
     payload = {

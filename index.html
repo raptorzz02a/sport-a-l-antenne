@@ -86,6 +86,7 @@ h2 small{font:400 .82rem var(--body);color:var(--muted);text-transform:none;lett
     <div class="row" id="f-bc"><span class="lbl">Chaînes</span></div>
     <div class="tools">
       <input id="q" type="search" placeholder="Équipe, compétition, pilote…" aria-label="Rechercher">
+      <label class="tg"><input type="checkbox" id="rediff"> Rediffusions</label>
       <label class="tg"><input type="checkbox" id="mag"> Magazines</label>
       <label class="tg"><input type="checkbox" id="past"> Déjà terminés</label>
     </div>
@@ -105,7 +106,7 @@ const store = {
   get(k, d){ try{ const v = localStorage.getItem("pts:"+k); return v ? JSON.parse(v) : d }catch(e){ return d } },
   set(k, v){ try{ localStorage.setItem("pts:"+k, JSON.stringify(v)) }catch(e){} }
 };
-const st = { sports:null, bcs:null, q:"", mag:store.get("mag",false), past:false };
+const st = { sports:null, bcs:null, q:"", mag:store.get("mag",false), rediff:store.get("rediff",false), past:false };
 let DATA = null;
 
 const fmt = (o) => new Intl.DateTimeFormat("fr-FR", Object.assign({timeZone:TZ}, o));
@@ -138,6 +139,7 @@ function render(){
   const evs = DATA.events.filter(e => {
     if (!st.sports.has(e.sport) || !st.bcs.has(e.broadcaster)) return false;
     if (!st.mag && e.kind === "magazine") return false;
+    if (!st.rediff && e.kind === "rediff") return false;
     if (!st.past && new Date(e.end) < now) return false;
     if (q && !norm([e.title,e.subtitle,e.desc,e.channel].join(" ")).includes(q)) return false;
     return true;
@@ -153,7 +155,7 @@ function render(){
     html += `<h2>${rel || long}<small>${rel ? long + " · " : ""}${list.length} diffusion${list.length>1?"s":""}</small></h2><div class="list">`;
     for (const e of list){
       const s = new Date(e.start), en = new Date(e.end), live = s <= now && now < en;
-      const kind = e.kind === "direct" ? '<span class="tag direct">Direct</span>' : e.kind === "magazine" ? '<span class="tag mag">Magazine</span>' : "";
+      const kind = e.kind === "direct" ? '<span class="tag direct">Direct</span>' : e.kind === "magazine" ? '<span class="tag mag">Magazine</span>' : e.kind === "rediff" ? '<span class="tag mag">Rediffusion</span>' : "";
       html += `<div class="ev${live?" now":""}">
         <div class="t">${hhmm.format(s)}<small>${live ? "en cours" : "→ " + hhmm.format(en)}</small></div>
         <div class="body"><div class="tags"><span class="tag sport">${esc(DATA.sports[e.sport]||e.sport)}</span>${kind}</div>
@@ -175,10 +177,12 @@ function init(data){
   chips("f-bc", bcs, st.bcs, "bcs");
   const g = new Date(data.generated);
   document.getElementById("meta").textContent =
-    `${data.events.length} diffusions repérées · mis à jour le ${dayLong.format(g)} à ${hhmm.format(g)}`;
+    `${data.events.filter(e => e.kind === "direct" || e.kind === "diffusion").length} matchs et courses repérés · mis à jour le ${dayLong.format(g)} à ${hhmm.format(g)}`;
   if (data.notice) document.getElementById("notice").textContent = data.notice;
   const mag = document.getElementById("mag"); mag.checked = st.mag;
   mag.onchange = () => { st.mag = mag.checked; store.set("mag", st.mag); render(); };
+  const rd = document.getElementById("rediff"); rd.checked = st.rediff;
+  rd.onchange = () => { st.rediff = rd.checked; store.set("rediff", st.rediff); render(); };
   const past = document.getElementById("past"); past.onchange = () => { st.past = past.checked; render(); };
   document.getElementById("q").oninput = (ev) => { st.q = ev.target.value; render(); };
   document.getElementById("reset").onclick = () => {
