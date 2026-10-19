@@ -87,6 +87,7 @@ MAGAZINE = (r"(magazine|talk|debat|journal|jt-sport|plateau|avant-match|apres-ma
             r"the match|inside|reportage|portrait|documentaire|histoire|retro|legende|replay|interview|emission|"
             r"l.integrale|tirage au sort|mercato|infos?\b|le debrief|after\b|late show|programme)")
 GENERIC_SPORT_CAT = r"(sport|multisport)"
+MAG_CAT = r"(magazine|\bmag\b|talk|\bdoc\b|documentaire|debat|divertissement|jt-sport|journal)"
 # Rugby : seulement Top 14, coupes d'Europe (Champions Cup, Challenge Cup) et equipe de France.
 RUGBY_COMP = r"(top ?14|champions cup|challenge cup|coupe d.europe|investec|\bepcr\b)"
 RUGBY_EXCLUDE = r"(pro ?d2|nationale|federale|a 7\b|sevens|xiii|rugby league|super rugby|premiership|urc\b|bledisloe|rugby championship)"
@@ -162,7 +163,7 @@ def classify(title, sub, desc, cats):
 def kind_of(title, sub, desc, cats, has_live):
     t = norm(f"{title} {sub}")
     c = norm(" ".join(cats))
-    if re.search(MAGAZINE, c) or re.search(MAGAZINE, t):
+    if re.search(MAG_CAT, c) or re.search(MAGAZINE, t):
         return "magazine"
     if has_live or re.search(r"\b(en direct|direct)\b", t) or re.search(r"\ben direct\b", norm(desc)[:300]):
         return "direct"
