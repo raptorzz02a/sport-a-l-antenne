@@ -24,6 +24,7 @@
   --bg:#0d121c; --panel:#151c2a; --fg:#e8ecf3; --muted:#97a2b5; --line:#263043;
   --accent:#7ea0ff; --accent-soft:#1d2a4a; --live:#ff6a62; --live-soft:#3a1a1c; --chip:#1d2534; --fav:#f5c06a; --fav-soft:#3a2c14; color-scheme:dark}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html,body{background:var(--bg);color:var(--fg)}
 body{margin:0;font:15px/1.45 var(--body);
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
@@ -34,7 +35,7 @@ h1 span{color:var(--accent)}
 .meta{color:var(--muted);font-size:.85rem}
 .notice{background:var(--accent-soft);border-radius:10px;padding:10px 14px;font-size:.88rem;margin-block:4px 10px}
 .notice:empty{display:none}
-.filters{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;display:grid;gap:8px;border-bottom:1px solid var(--line)}
+.filters{background:var(--bg);padding-block:10px;display:grid;gap:8px;border-bottom:1px solid var(--line)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
 .row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .lbl{font:600 .72rem/1 var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);width:68px;flex:none}
@@ -65,10 +66,11 @@ h2 small{font:400 .82rem var(--body);color:var(--muted);text-transform:none;lett
 .ch{text-align:right;font:600 .95rem/1.15 var(--display);text-transform:uppercase;letter-spacing:.02em;max-width:130px}
 .ch small{display:block;font:400 .74rem var(--body);color:var(--muted);text-transform:none}
 .empty{padding:28px 16px;text-align:center;color:var(--muted)}
-#favs{margin-bottom:8px}
-.fav-h{font-size:1.5rem;margin-top:18px}
-.all-h{font-size:1.5rem;margin:30px 0 4px}
-#f-fav{margin-bottom:6px}
+#f-sport-wrap{display:grid;gap:8px;justify-items:start}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel)}
+.seg button{border:0;background:transparent;color:var(--fg);padding:9px 14px;font:600 .92rem var(--body);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--panel)}
+.seg button#m-fav[aria-pressed="true"]{background:var(--fav);color:var(--panel)}
 .tag.fav{background:var(--fav-soft);color:var(--fav)}
 .more{display:block;width:100%;border:0;border-top:1px solid var(--line);background:transparent;color:var(--accent);padding:10px;font:600 .88rem var(--body);cursor:pointer}
 .ics{margin-top:28px;padding:16px;border:1px dashed var(--line);border-radius:12px;font-size:.9rem}
@@ -84,18 +86,19 @@ h2 small{font:400 .82rem var(--body);color:var(--muted);text-transform:none;lett
       <h1>Sport <span>à l'antenne</span></h1>
       <div class="meta" id="meta">Chargement du programme…</div>
     </div>
-    <button class="btn" id="reset" type="button">Tout réafficher</button>
+    <div class="seg" role="group" aria-label="Affichage">
+      <button type="button" id="m-all" aria-pressed="true">Programme complet</button>
+      <button type="button" id="m-fav" aria-pressed="false">★ Mes favoris</button>
+    </div>
   </header>
   <div class="notice" id="notice"></div>
-  <section id="favs" hidden>
-    <h2 class="fav-h">★ Mes favoris<small id="fav-count"></small></h2>
-    <div class="row" id="f-fav"></div>
-    <div id="fav-out"></div>
-  </section>
-  <h2 class="all-h">Tout le programme</h2>
   <div class="filters">
+    <div class="row" id="f-fav" hidden><span class="lbl">Favoris</span></div>
+    <div class="row" id="f-sport-wrap">
     <div class="row" id="f-sport"><span class="lbl">Sports</span></div>
     <div class="row" id="f-bc"><span class="lbl">Chaînes</span></div>
+    <button class="btn" id="reset" type="button">Tout réafficher</button>
+    </div>
     <div class="tools">
       <input id="q" type="search" placeholder="Équipe, compétition, pilote…" aria-label="Rechercher">
       <label class="tg"><input type="checkbox" id="rediff"> Rediffusions</label>
@@ -120,7 +123,7 @@ const store = {
   get(k, d){ try{ const v = localStorage.getItem("pts:"+k); return v ? JSON.parse(v) : d }catch(e){ return d } },
   set(k, v){ try{ localStorage.setItem("pts:"+k, JSON.stringify(v)) }catch(e){} }
 };
-const st = { favs:null, favMore:false, sports:null, bcs:null, q:"", mag:store.get("mag",false), rediff:store.get("rediff",false), past:false };
+const st = { mode:store.get("mode","all"), favs:null, sports:null, bcs:null, q:"", mag:store.get("mag",false), rediff:store.get("rediff",false), past:false };
 let DATA = null;
 
 const fmt = (o) => new Intl.DateTimeFormat("fr-FR", Object.assign({timeZone:TZ}, o));
@@ -158,35 +161,16 @@ function row(e, now){
     <div class="ch">${esc(e.broadcaster)}${e.channel!==e.broadcaster?`<small>${esc(e.channel)}</small>`:""}</div></div>`;
 }
 
-function renderFavs(now){
-  const names = DATA.favorites || [];
-  document.getElementById("favs").hidden = !names.length;
-  if (!names.length) return;
-  const evs = DATA.events.filter(e => (e.fav||[]).some(f => st.favs.has(f))
-    && (e.kind === "direct" || e.kind === "diffusion") && new Date(e.end) >= now);
-  document.getElementById("fav-count").textContent = `${evs.length} à venir`;
-  const out = document.getElementById("fav-out");
-  if (!evs.length){ out.innerHTML = '<div class="list"><div class="empty">Rien de prévu pour vos favoris dans les jours qui viennent.</div></div>'; return; }
-  const shown = st.favMore ? evs : evs.slice(0, 8);
-  let html = '<div class="list">';
-  let last = "";
-  for (const e of shown){
-    const k = dayKey.format(new Date(e.start));
-    if (k !== last){ html += `<div class="ev" style="display:block;padding-block:6px;background:var(--chip)"><strong>${relDay(k, now) || dayLong.format(new Date(e.start))}</strong></div>`; last = k; }
-    html += row(e, now);
-  }
-  if (evs.length > 8) html += `<button class="more" id="fav-more" type="button">${st.favMore ? "Afficher moins" : `Afficher les ${evs.length} diffusions`}</button>`;
-  out.innerHTML = html + "</div>";
-  const m = document.getElementById("fav-more");
-  if (m) m.onclick = () => { st.favMore = !st.favMore; renderFavs(new Date()); };
-}
-
 function render(){
   const now = new Date();
-  renderFavs(now);
+  const fav = st.mode === "fav";
+  document.getElementById("m-all").setAttribute("aria-pressed", !fav);
+  document.getElementById("m-fav").setAttribute("aria-pressed", fav);
+  document.getElementById("f-fav").hidden = !fav;
+  document.getElementById("f-sport-wrap").hidden = fav;
   const q = norm(st.q).trim();
   const evs = DATA.events.filter(e => {
-    if (!st.sports.has(e.sport) || !st.bcs.has(e.broadcaster)) return false;
+    if (fav ? !(e.fav||[]).some(f => st.favs.has(f)) : (!st.sports.has(e.sport) || !st.bcs.has(e.broadcaster))) return false;
     if (!st.mag && e.kind === "magazine") return false;
     if (!st.rediff && e.kind === "rediff") return false;
     if (!st.past && new Date(e.end) < now) return false;
@@ -196,7 +180,7 @@ function render(){
   const groups = new Map();
   evs.forEach(e => { const k = dayKey.format(new Date(e.start)); if(!groups.has(k)) groups.set(k, []); groups.get(k).push(e); });
   const out = document.getElementById("out");
-  if (!evs.length){ out.innerHTML = '<h2>Programme</h2><div class="list"><div class="empty">Aucune diffusion ne correspond à ces filtres.</div></div>'; return; }
+  if (!evs.length){ out.innerHTML = `<h2>${fav ? "Mes favoris" : "Programme"}</h2><div class="list"><div class="empty">${fav ? "Rien de prévu pour vos favoris dans les jours qui viennent." : "Aucune diffusion ne correspond à ces filtres."}</div></div>`; return; }
   let html = "";
   for (const [k, list] of groups){
     const d = new Date(list[0].start);
@@ -220,6 +204,10 @@ function init(data){
   st.favs = new Set(store.get("favs", favs.map(f => f[0])).filter(f => data.favorites.includes(f)));
   if (!st.favs.size) favs.forEach(f => st.favs.add(f[0]));
   chips("f-fav", favs, st.favs, "favs");
+  if (!favs.length){ st.mode = "all"; document.getElementById("m-fav").hidden = true; }
+  const setMode = m => { st.mode = m; store.set("mode", m); render(); };
+  document.getElementById("m-all").onclick = () => setMode("all");
+  document.getElementById("m-fav").onclick = () => setMode("fav");
   const g = new Date(data.generated);
   document.getElementById("meta").textContent =
     `${data.events.filter(e => e.kind === "direct" || e.kind === "diffusion").length} matchs et courses repérés · mis à jour le ${dayLong.format(g)} à ${hhmm.format(g)}`;

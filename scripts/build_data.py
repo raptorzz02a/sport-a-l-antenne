@@ -66,6 +66,9 @@ SPORTS = [
                           r"conference league", r"coupe de france", r"\bmls\b", r"\bcan 20", r"coupe du monde fifa",
                           r"\buefa\b", r"\bfifa\b", r"\bd1 arkema\b", r"national 1"]),
 ]
+# Football : seulement ces competitions (programme complet et agendas).
+FOOT_KEEP = r"(ligue des champions|champions league|\bligue [12]\b|premier league)"
+FOOT_OTHER = r"(\bliga\b|serie a|bundesliga|europa|conference|coupe|cup\b|\bmls\b|eredivisie|national|amical|feminin|youth|jeunes|u\d\d)"
 NOT_SPORT = [r"football americain", r"foot us", r"\bnfl\b", r"futsal", r"beach soccer", r"hockey sur gazon",
              r"field hockey", r"rink hockey", r"foot 2 rue", r"\bs\d+ \(n.\d+", r"f1h2o", r"motonautisme"]
 # Programme dont le titre commence par un autre sport ("Cyclo-cross : Coupe de France") : ignore.
@@ -154,8 +157,12 @@ def classify(title, sub, desc, cats):
                     if re.search(RUGBY_COMP, f"{head} {body}") or re.search(r"(\bfrance\b|xv de france|les bleus)", head):
                         return "rugby"
                     return None
-                if key == "foot" and any(re.search(p, full) for p in NOT_SPORT):
-                    return None
+                if key == "foot":
+                    if any(re.search(p, full) for p in NOT_SPORT):
+                        return None
+                    if not (re.search(FOOT_KEEP, head)
+                            or (not re.search(FOOT_OTHER, head) and re.search(FOOT_KEEP, body[:250]))):
+                        return None
                 return key
     return None
 

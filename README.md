@@ -23,7 +23,7 @@ Planning des diffusions TV de basket (dont la Betclic Élite), football, rugby (
 | TF1 / M6 | TF1, M6 |
 | RMC Sport | RMC Sport 1, 2, Live, UHD |
 
-Les sports sont reconnus à partir de la catégorie, du titre et de la description de chaque programme ; les règles sont en tête de `scripts/build_data.py` (`SPORTS`, `BROADCASTERS`).
+En football, seules la Ligue des champions, la Ligue 1, la Ligue 2 et la Premier League sont gardées (`FOOT_KEEP`). Les sports sont reconnus à partir de la catégorie, du titre et de la description de chaque programme ; les règles sont en tête de `scripts/build_data.py` (`SPORTS`, `BROADCASTERS`).
 
 ## Favoris
 
