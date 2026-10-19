@@ -67,8 +67,25 @@ SPORTS = [
                           r"\buefa\b", r"\bfifa\b", r"\bd1 arkema\b", r"national 1"]),
 ]
 NOT_SPORT = [r"football americain", r"foot us", r"\bnfl\b", r"futsal", r"beach soccer", r"hockey sur gazon",
-             r"field hockey", r"rink hockey"]
-MAGAZINE = r"(magazine|talk|debat|journal|jt-sport|plateau|avant-match|apres-match|avant match|apres match|debrief|club$|le mag|ceremonie|ballon d.or|classiques|resume|best of|highlights)"
+             r"field hockey", r"rink hockey", r"foot 2 rue", r"\bs\d+ \(n.\d+", r"f1h2o", r"motonautisme"]
+# Programme dont le titre commence par un autre sport ("Cyclo-cross : Coupe de France") : ignore.
+OTHER_SPORT_PREFIX = (r"^(cyclo.?cross|cyclisme|vtt|tennis|tennis de table|golf|equitation|hippisme|athletisme|natation|ski|"
+                      r"biathlon|voile|volley|beach.?volley|badminton|padel|judo|escrime|patinage|catch|baseball|cricket|"
+                      r"triathlon|trail|rallye|endurance|wec|indycar|nascar|superbike|motocross|enduro|boxe|kick.?boxing|"
+                      r"snooker|billard|squash|lutte|gymnastique|aviron|canoe|surf|sports? mecaniques?|automobile|"
+                      r"e-?sport|poker|rugby a xiii|football americain|halterophilie|sports? de combat|bowling)\b\s*:")
+# Indices qu'un programme est une competition (match, course, combat), et non une emission autour du sport.
+EVENT = (r"( / | - | vs\.? | contre |grand prix|\bgp\b|essais|qualif|course|sprint|warm.?up|finale|journee|\bmatch\b|"
+         r"combat|\bufc \d|fight night|\bpfl\b|\bares\b|hexagone mma|\bksw\b|masters|championnat|coupe|trophee|"
+         r"tournoi|\bopen\b|playoffs?|\bround\b|\bnight\b|series|derby|\bcup\b|ligue|league|liga|serie a|bundesliga|"
+         r"\bnba\b|\bnhl\b|euroligue|eurocup|betclic|starligue|top 14)")
+SPORT_TITLE = (r"^(football|basket-?ball|handball|hockey sur glace|hockey|flechettes|darts|petanque|mma|formule 1|f1|"
+               r"moto ?gp|moto ?[23]|rugby)\b")
+MAGAZINE = (r"(magazine|talk|debat|journal|jt-sport|plateau|avant-match|apres-match|avant match|apres match|debrief|"
+            r"club$|le mag|ceremonie|ballon d.or|classiques|resume|best of|highlights|meilleurs moments|conference de presse|"
+            r"pesee|extra\b|en route pour|stream team|l.equipe de|stade 2|telefoot|format mma|sur canal|les matchs de|"
+            r"the match|inside|reportage|portrait|documentaire|histoire|retro|legende|replay|interview|emission|"
+            r"l.integrale|tirage au sort|mercato|infos?\b|le debrief|after\b|late show|programme)")
 GENERIC_SPORT_CAT = r"(sport|multisport)"
 # Rugby : seulement Top 14, coupes d'Europe (Champions Cup, Challenge Cup) et equipe de France.
 RUGBY_COMP = r"(top ?14|champions cup|challenge cup|coupe d.europe|investec|\bepcr\b)"
@@ -120,6 +137,8 @@ def classify(title, sub, desc, cats):
     head = norm(f"{title} {sub}")
     body = norm(desc)[:400]
     full = f"{cat_txt} {head} {body}"
+    if re.search(OTHER_SPORT_PREFIX, norm(title)):
+        return None
     if re.search(NON_LIVE_CAT, cat_txt) or any(re.search(p, f"{cat_txt} {head}") for p in NOT_SPORT):
         return None
     sources = [cat_txt, head]
@@ -145,9 +164,11 @@ def kind_of(title, sub, desc, cats, has_live):
     c = norm(" ".join(cats))
     if re.search(MAGAZINE, c) or re.search(MAGAZINE, t):
         return "magazine"
-    if has_live or re.search(r"\b(en direct|direct|live)\b", t) or re.search(r"\ben direct\b", norm(desc)[:300]):
+    if has_live or re.search(r"\b(en direct|direct)\b", t) or re.search(r"\ben direct\b", norm(desc)[:300]):
         return "direct"
-    return "diffusion"
+    if re.search(EVENT, t) or re.search(SPORT_TITLE, t):
+        return "diffusion"
+    return "magazine"
 
 
 def from_xmltv(xml_bytes, source_label):
@@ -183,6 +204,7 @@ def from_xmltv(xml_bytes, source_label):
             "subtitle": sub,
             "desc": desc[:280],
             "kind": kind_of(title, sub, desc, cats, p.find("live") is not None),
+            "cats": [c for c in cats if c][:3],
             "source": source_label,
         })
     print(f"[{source_label}] {len(chans)} chaines suivies, {len(events)} programmes retenus", file=sys.stderr)
