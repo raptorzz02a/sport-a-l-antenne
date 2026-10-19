@@ -40,7 +40,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .lbl{font:600 .72rem/1 var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);width:68px;flex:none}
 .chip{border:1px solid transparent;background:var(--chip);color:var(--fg);border-radius:999px;padding:5px 11px;font:500 .85rem var(--body);cursor:pointer}
-.chip[aria-pressed="false"]{opacity:.45;text-decoration:line-through}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--panel)}
+#f-fav .chip[aria-pressed="true"]{background:var(--fav)}
 .chip:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .tools{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
 #q{flex:1 1 220px;min-width:0;border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:8px;padding:8px 11px;font:inherit}
@@ -97,7 +98,7 @@ h2 small{font:400 .82rem var(--body);color:var(--muted);text-transform:none;lett
     <div class="row" id="f-sport-wrap">
     <div class="row" id="f-sport"><span class="lbl">Sports</span></div>
     <div class="row" id="f-bc"><span class="lbl">Chaînes</span></div>
-    <button class="btn" id="reset" type="button">Tout réafficher</button>
+    <button class="btn" id="reset" type="button">Tout afficher</button>
     </div>
     <div class="tools">
       <input id="q" type="search" placeholder="Équipe, compétition, pilote…" aria-label="Rechercher">
@@ -170,7 +171,9 @@ function render(){
   document.getElementById("f-sport-wrap").hidden = fav;
   const q = norm(st.q).trim();
   const evs = DATA.events.filter(e => {
-    if (fav ? !(e.fav||[]).some(f => st.favs.has(f)) : (!st.sports.has(e.sport) || !st.bcs.has(e.broadcaster))) return false;
+    // Un filtre vide montre tout ; sinon seulement les elements choisis.
+    const ok = (sel, v) => !sel.size || (Array.isArray(v) ? v.some(x => sel.has(x)) : sel.has(v));
+    if (fav ? !((e.fav||[]).length && ok(st.favs, e.fav)) : (!ok(st.sports, e.sport) || !ok(st.bcs, e.broadcaster))) return false;
     if (!st.mag && e.kind === "magazine") return false;
     if (!st.rediff && e.kind === "rediff") return false;
     if (!st.past && new Date(e.end) < now) return false;
@@ -196,14 +199,13 @@ function init(data){
   DATA = data;
   const sports = ORDER.filter(k => data.sports[k]).map(k => [k, data.sports[k]]);
   const bcs = data.broadcasters.map(b => [b, b]);
-  st.sports = new Set(store.get("sports", sports.map(s => s[0])));
-  st.bcs = new Set(store.get("bcs", bcs.map(b => b[0])));
-  chips("f-sport", sports, st.sports, "sports");
-  chips("f-bc", bcs, st.bcs, "bcs");
+  st.sports = new Set(store.get("onlySports", []).filter(k => data.sports[k]));
+  st.bcs = new Set(store.get("onlyBcs", []).filter(b => data.broadcasters.includes(b)));
+  chips("f-sport", sports, st.sports, "onlySports");
+  chips("f-bc", bcs, st.bcs, "onlyBcs");
   const favs = (data.favorites || []).map(f => [f, f]);
-  st.favs = new Set(store.get("favs", favs.map(f => f[0])).filter(f => data.favorites.includes(f)));
-  if (!st.favs.size) favs.forEach(f => st.favs.add(f[0]));
-  chips("f-fav", favs, st.favs, "favs");
+  st.favs = new Set(store.get("onlyFavs", []).filter(f => data.favorites.includes(f)));
+  chips("f-fav", favs, st.favs, "onlyFavs");
   if (!favs.length){ st.mode = "all"; document.getElementById("m-fav").hidden = true; }
   const setMode = m => { st.mode = m; store.set("mode", m); render(); };
   document.getElementById("m-all").onclick = () => setMode("all");
@@ -219,9 +221,9 @@ function init(data){
   const past = document.getElementById("past"); past.onchange = () => { st.past = past.checked; render(); };
   document.getElementById("q").oninput = (ev) => { st.q = ev.target.value; render(); };
   document.getElementById("reset").onclick = () => {
-    sports.forEach(s => st.sports.add(s[0])); bcs.forEach(b => st.bcs.add(b[0]));
-    store.set("sports", [...st.sports]); store.set("bcs", [...st.bcs]);
-    chips("f-sport", sports, st.sports, "sports"); chips("f-bc", bcs, st.bcs, "bcs"); render();
+    st.sports.clear(); st.bcs.clear();
+    store.set("onlySports", []); store.set("onlyBcs", []);
+    chips("f-sport", sports, st.sports, "onlySports"); chips("f-bc", bcs, st.bcs, "onlyBcs"); render();
   };
   if (location.protocol.startsWith("http") && !data.embedded){
     document.getElementById("ics-url").textContent = new URL("data/sports.ics", location.href).href;
