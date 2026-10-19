@@ -86,7 +86,7 @@ SPORT_TITLE = (r"^(football|basket-?ball|handball|hockey sur glace|hockey|fleche
                r"moto ?gp|moto ?[23]|rugby)\b")
 MAGAZINE = (r"(magazine|talk|debat|journal|jt-sport|plateau|avant-match|apres-match|avant match|apres match|debrief|"
             r"club$|le mag|ceremonie|ballon d.or|classiques|resume|best of|highlights|meilleurs moments|conference de presse|"
-            r"pesee|extra\b|en route pour|stream team|l.equipe de|stade 2|telefoot|format mma|sur canal|les matchs de|"
+            r"pesee|extra\b|plus beaux|review|en route pour|stream team|l.equipe de|stade 2|telefoot|format mma|sur canal|les matchs de|"
             r"the match|inside|reportage|portrait|documentaire|histoire|retro|legende|replay|interview|emission|"
             r"l.integrale|tirage au sort|mercato|infos?\b|le debrief|after\b|late show|programme)")
 GENERIC_SPORT_CAT = r"(sport|multisport)"
