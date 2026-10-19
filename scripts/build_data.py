@@ -254,10 +254,27 @@ def ics_escape(s):
     return (s or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
 
 
-def write_ics(events, path, sport_labels):
+def tag_favorites(events, path):
+    """Ajoute a chaque evenement la liste des favoris (favoris.json) qu'il concerne.
+    Un favori est retenu si son sport correspond et qu'un de ses mots apparait dans le titre ou le sous-titre."""
+    try:
+        with open(path, encoding="utf-8") as fh:
+            favs = json.load(fh)
+    except FileNotFoundError:
+        favs = []
+    for e in events:
+        txt = norm(f'{e["title"]} {e["subtitle"]}')
+        e["fav"] = [f["nom"] for f in favs
+                    if f.get("sport") in (None, e["sport"])
+                    and any(norm(w) in txt for w in f.get("titre", []))
+                    and not any(norm(w) in txt for w in f.get("exclure", []))]
+    return [f["nom"] for f in favs]
+
+
+def write_ics(events, path, sport_labels, name="Sport à la TV"):
     stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//programme-tv-sport//FR", "CALSCALE:GREGORIAN",
-             "X-WR-CALNAME:Sport à la TV", "X-WR-TIMEZONE:Europe/Paris", "REFRESH-INTERVAL;VALUE=DURATION:PT6H",
+             f"X-WR-CALNAME:{name}", "X-WR-TIMEZONE:Europe/Paris", "REFRESH-INTERVAL;VALUE=DURATION:PT6H",
              "X-PUBLISHED-TTL:PT6H"]
     for e in events:
         if e["kind"] in ("magazine", "rediff"):
@@ -351,16 +368,19 @@ def main():
     events = [e for e in mark_reruns(dedupe(events)) if dt.datetime.fromisoformat(e["end"].replace("Z", "+00:00")) >= cutoff]
     labels = {k: lbl for k, lbl, _ in SPORTS}
     os.makedirs(args.out, exist_ok=True)
+    favorites = tag_favorites(events, os.path.join(ROOT, "favoris.json"))
     payload = {
         "generated": now.isoformat().replace("+00:00", "Z"),
         "sources": sources,
         "sports": labels,
         "broadcasters": [b for b, _ in BROADCASTERS] + ["EuroLeague TV"],
+        "favorites": favorites,
         "events": events,
     }
     with open(os.path.join(args.out, "events.json"), "w", encoding="utf-8") as fh:
         json.dump(payload, fh, ensure_ascii=False, separators=(",", ":"))
     write_ics(events, os.path.join(args.out, "sports.ics"), labels)
+    write_ics([e for e in events if e["fav"]], os.path.join(args.out, "favoris.ics"), labels, "Mes favoris à la TV")
     print(f"OK : {len(events)} evenements ecrits dans {args.out}", file=sys.stderr)
 
 

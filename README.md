@@ -25,6 +25,10 @@ Planning des diffusions TV de basket (dont la Betclic Élite), football, rugby (
 
 Les sports sont reconnus à partir de la catégorie, du titre et de la description de chaque programme ; les règles sont en tête de `scripts/build_data.py` (`SPORTS`, `BROADCASTERS`).
 
+## Favoris
+
+La section « Mes favoris » en haut de la page et l'agenda `data/favoris.ics` viennent de `favoris.json`. Chaque favori a un `nom`, un `sport` et des mots à chercher dans le titre (`titre`), plus des mots à exclure (`exclure`). Modifier ce fichier sur GitHub relance la collecte.
+
 ## Mise en ligne (GitHub Pages, gratuit)
 
 1. Créer un dépôt GitHub (public pour GitHub Pages gratuit) et y pousser ces fichiers sur `main`.

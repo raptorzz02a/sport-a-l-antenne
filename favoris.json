@@ -1,0 +1,7 @@
+[
+  {"nom": "FC Nantes", "sport": "foot", "titre": ["nantes"], "exclure": ["feminin"]},
+  {"nom": "Cholet Basket", "sport": "basket", "titre": ["cholet"]},
+  {"nom": "Ligue des champions", "sport": "foot", "titre": ["ligue des champions", "champions league"], "exclure": ["feminin", "women", "youth", "jeunes"]},
+  {"nom": "EuroLeague", "sport": "basket", "titre": ["euroleague", "euroligue"], "exclure": ["eurocup", "feminin"]},
+  {"nom": "Canadiens de Montréal", "sport": "hockey", "titre": ["canadiens", "montreal"]}
+]

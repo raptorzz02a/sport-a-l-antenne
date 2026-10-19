@@ -12,17 +12,17 @@
 :root{
   --bg:#f2f4f7; --panel:#ffffff; --fg:#141a26; --muted:#5a6475; --line:#dde2ea;
   --accent:#1747c9; --accent-soft:#e3eafc; --live:#d92f2a; --live-soft:#fde7e6;
-  --chip:#e9edf3;
+  --chip:#e9edf3; --fav:#9a5b00; --fav-soft:#fdf0d9;
   --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
   --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0d121c; --panel:#151c2a; --fg:#e8ecf3; --muted:#97a2b5; --line:#263043;
-  --accent:#7ea0ff; --accent-soft:#1d2a4a; --live:#ff6a62; --live-soft:#3a1a1c; --chip:#1d2534; color-scheme:dark}}
+  --accent:#7ea0ff; --accent-soft:#1d2a4a; --live:#ff6a62; --live-soft:#3a1a1c; --chip:#1d2534; --fav:#f5c06a; --fav-soft:#3a2c14; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0d121c; --panel:#151c2a; --fg:#e8ecf3; --muted:#97a2b5; --line:#263043;
-  --accent:#7ea0ff; --accent-soft:#1d2a4a; --live:#ff6a62; --live-soft:#3a1a1c; --chip:#1d2534; color-scheme:dark}
+  --accent:#7ea0ff; --accent-soft:#1d2a4a; --live:#ff6a62; --live-soft:#3a1a1c; --chip:#1d2534; --fav:#f5c06a; --fav-soft:#3a2c14; color-scheme:dark}
 *{box-sizing:border-box}
 html,body{background:var(--bg);color:var(--fg)}
 body{margin:0;font:15px/1.45 var(--body);
@@ -65,6 +65,12 @@ h2 small{font:400 .82rem var(--body);color:var(--muted);text-transform:none;lett
 .ch{text-align:right;font:600 .95rem/1.15 var(--display);text-transform:uppercase;letter-spacing:.02em;max-width:130px}
 .ch small{display:block;font:400 .74rem var(--body);color:var(--muted);text-transform:none}
 .empty{padding:28px 16px;text-align:center;color:var(--muted)}
+#favs{margin-bottom:8px}
+.fav-h{font-size:1.5rem;margin-top:18px}
+.all-h{font-size:1.5rem;margin:30px 0 4px}
+#f-fav{margin-bottom:6px}
+.tag.fav{background:var(--fav-soft);color:var(--fav)}
+.more{display:block;width:100%;border:0;border-top:1px solid var(--line);background:transparent;color:var(--accent);padding:10px;font:600 .88rem var(--body);cursor:pointer}
 .ics{margin-top:28px;padding:16px;border:1px dashed var(--line);border-radius:12px;font-size:.9rem}
 .ics code{background:var(--chip);padding:2px 6px;border-radius:5px;overflow-wrap:anywhere}
 @media (max-width:520px){.ev{grid-template-columns:52px 1fr}.ch{grid-column:2;text-align:left;max-width:none}.ch small{display:inline;margin-left:6px}.lbl{width:100%}}
@@ -81,6 +87,12 @@ h2 small{font:400 .82rem var(--body);color:var(--muted);text-transform:none;lett
     <button class="btn" id="reset" type="button">Tout réafficher</button>
   </header>
   <div class="notice" id="notice"></div>
+  <section id="favs" hidden>
+    <h2 class="fav-h">★ Mes favoris<small id="fav-count"></small></h2>
+    <div class="row" id="f-fav"></div>
+    <div id="fav-out"></div>
+  </section>
+  <h2 class="all-h">Tout le programme</h2>
   <div class="filters">
     <div class="row" id="f-sport"><span class="lbl">Sports</span></div>
     <div class="row" id="f-bc"><span class="lbl">Chaînes</span></div>
@@ -95,7 +107,9 @@ h2 small{font:400 .82rem var(--body);color:var(--muted);text-transform:none;lett
   <section class="ics" id="ics" hidden>
     <strong>Recevoir une alerte 15 min avant chaque diffusion.</strong>
     Abonnez votre agenda (Google Agenda : « Autres agendas › À partir de l'URL » ; iPhone : Réglages › Calendrier › Comptes › Ajouter un calendrier avec abonnement) à cette adresse :<br>
-    <code id="ics-url"></code> <button class="btn" id="copy" type="button">Copier</button>
+    <code id="ics-url"></code> <button class="btn" data-copy="ics-url" type="button">Copier</button><br><br>
+    <strong>Seulement mes favoris :</strong><br>
+    <code id="ics-fav-url"></code> <button class="btn" data-copy="ics-fav-url" type="button">Copier</button>
   </section>
 </div>
 <script id="embedded-data" type="application/json">null</script>
@@ -106,7 +120,7 @@ const store = {
   get(k, d){ try{ const v = localStorage.getItem("pts:"+k); return v ? JSON.parse(v) : d }catch(e){ return d } },
   set(k, v){ try{ localStorage.setItem("pts:"+k, JSON.stringify(v)) }catch(e){} }
 };
-const st = { sports:null, bcs:null, q:"", mag:store.get("mag",false), rediff:store.get("rediff",false), past:false };
+const st = { favs:null, favMore:false, sports:null, bcs:null, q:"", mag:store.get("mag",false), rediff:store.get("rediff",false), past:false };
 let DATA = null;
 
 const fmt = (o) => new Intl.DateTimeFormat("fr-FR", Object.assign({timeZone:TZ}, o));
@@ -133,8 +147,43 @@ function relDay(k, now){
   return k === today ? "Aujourd'hui" : k === tomorrow ? "Demain" : null;
 }
 
+function row(e, now){
+  const s = new Date(e.start), en = new Date(e.end), live = s <= now && now < en;
+  const kind = e.kind === "direct" ? '<span class="tag direct">Direct</span>' : e.kind === "magazine" ? '<span class="tag mag">Magazine</span>' : e.kind === "rediff" ? '<span class="tag mag">Rediffusion</span>' : "";
+  const fav = (e.fav||[]).map(f => `<span class="tag fav">★ ${esc(f)}</span>`).join("");
+  return `<div class="ev${live?" now":""}">
+    <div class="t">${hhmm.format(s)}<small>${live ? "en cours" : "→ " + hhmm.format(en)}</small></div>
+    <div class="body"><div class="tags"><span class="tag sport">${esc(DATA.sports[e.sport]||e.sport)}</span>${kind}${fav}</div>
+      <div class="title">${esc(e.title)}</div>${e.subtitle?`<div class="sub">${esc(e.subtitle)}</div>`:""}${e.desc?`<div class="desc">${esc(e.desc)}</div>`:""}</div>
+    <div class="ch">${esc(e.broadcaster)}${e.channel!==e.broadcaster?`<small>${esc(e.channel)}</small>`:""}</div></div>`;
+}
+
+function renderFavs(now){
+  const names = DATA.favorites || [];
+  document.getElementById("favs").hidden = !names.length;
+  if (!names.length) return;
+  const evs = DATA.events.filter(e => (e.fav||[]).some(f => st.favs.has(f))
+    && (e.kind === "direct" || e.kind === "diffusion") && new Date(e.end) >= now);
+  document.getElementById("fav-count").textContent = `${evs.length} à venir`;
+  const out = document.getElementById("fav-out");
+  if (!evs.length){ out.innerHTML = '<div class="list"><div class="empty">Rien de prévu pour vos favoris dans les jours qui viennent.</div></div>'; return; }
+  const shown = st.favMore ? evs : evs.slice(0, 8);
+  let html = '<div class="list">';
+  let last = "";
+  for (const e of shown){
+    const k = dayKey.format(new Date(e.start));
+    if (k !== last){ html += `<div class="ev" style="display:block;padding-block:6px;background:var(--chip)"><strong>${relDay(k, now) || dayLong.format(new Date(e.start))}</strong></div>`; last = k; }
+    html += row(e, now);
+  }
+  if (evs.length > 8) html += `<button class="more" id="fav-more" type="button">${st.favMore ? "Afficher moins" : `Afficher les ${evs.length} diffusions`}</button>`;
+  out.innerHTML = html + "</div>";
+  const m = document.getElementById("fav-more");
+  if (m) m.onclick = () => { st.favMore = !st.favMore; renderFavs(new Date()); };
+}
+
 function render(){
   const now = new Date();
+  renderFavs(now);
   const q = norm(st.q).trim();
   const evs = DATA.events.filter(e => {
     if (!st.sports.has(e.sport) || !st.bcs.has(e.broadcaster)) return false;
@@ -153,15 +202,7 @@ function render(){
     const d = new Date(list[0].start);
     const rel = relDay(k, now), long = dayLong.format(d);
     html += `<h2>${rel || long}<small>${rel ? long + " · " : ""}${list.length} diffusion${list.length>1?"s":""}</small></h2><div class="list">`;
-    for (const e of list){
-      const s = new Date(e.start), en = new Date(e.end), live = s <= now && now < en;
-      const kind = e.kind === "direct" ? '<span class="tag direct">Direct</span>' : e.kind === "magazine" ? '<span class="tag mag">Magazine</span>' : e.kind === "rediff" ? '<span class="tag mag">Rediffusion</span>' : "";
-      html += `<div class="ev${live?" now":""}">
-        <div class="t">${hhmm.format(s)}<small>${live ? "en cours" : "→ " + hhmm.format(en)}</small></div>
-        <div class="body"><div class="tags"><span class="tag sport">${esc(DATA.sports[e.sport]||e.sport)}</span>${kind}</div>
-          <div class="title">${esc(e.title)}</div>${e.subtitle?`<div class="sub">${esc(e.subtitle)}</div>`:""}${e.desc?`<div class="desc">${esc(e.desc)}</div>`:""}</div>
-        <div class="ch">${esc(e.broadcaster)}${e.channel!==e.broadcaster?`<small>${esc(e.channel)}</small>`:""}</div></div>`;
-    }
+    for (const e of list) html += row(e, now);
     html += "</div>";
   }
   out.innerHTML = html;
@@ -175,6 +216,10 @@ function init(data){
   st.bcs = new Set(store.get("bcs", bcs.map(b => b[0])));
   chips("f-sport", sports, st.sports, "sports");
   chips("f-bc", bcs, st.bcs, "bcs");
+  const favs = (data.favorites || []).map(f => [f, f]);
+  st.favs = new Set(store.get("favs", favs.map(f => f[0])).filter(f => data.favorites.includes(f)));
+  if (!st.favs.size) favs.forEach(f => st.favs.add(f[0]));
+  chips("f-fav", favs, st.favs, "favs");
   const g = new Date(data.generated);
   document.getElementById("meta").textContent =
     `${data.events.filter(e => e.kind === "direct" || e.kind === "diffusion").length} matchs et courses repérés · mis à jour le ${dayLong.format(g)} à ${hhmm.format(g)}`;
@@ -191,11 +236,11 @@ function init(data){
     chips("f-sport", sports, st.sports, "sports"); chips("f-bc", bcs, st.bcs, "bcs"); render();
   };
   if (location.protocol.startsWith("http") && !data.embedded){
-    const url = new URL("data/sports.ics", location.href).href;
-    document.getElementById("ics-url").textContent = url;
+    document.getElementById("ics-url").textContent = new URL("data/sports.ics", location.href).href;
+    document.getElementById("ics-fav-url").textContent = new URL("data/favoris.ics", location.href).href;
     document.getElementById("ics").hidden = false;
-    document.getElementById("copy").onclick = () => navigator.clipboard.writeText(url).then(
-      () => document.getElementById("copy").textContent = "Copié", () => {});
+    document.querySelectorAll("[data-copy]").forEach(b => b.onclick = () =>
+      navigator.clipboard.writeText(document.getElementById(b.dataset.copy).textContent).then(() => b.textContent = "Copié", () => {}));
   }
   render();
   setInterval(render, 60000);
