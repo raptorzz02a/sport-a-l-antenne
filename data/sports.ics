@@ -7,17 +7,17 @@ X-WR-TIMEZONE:Europe/Paris
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:0a74d37d395df1cc60dc4aa86444952db77fbe10@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261109T110500Z
-DTEND:20261109T124900Z
-SUMMARY:Football · Football : Premier League | Ipswich / Bournemouth (Cana
- l+ Foot)
-DESCRIPTION:CANAL+\, diffuseur de la Premier League dans plus de 50 pays en
-  Europe\, en Afrique et en Asie\, offre aux fans de football un accès imm
- ersif complet aux clubs légendaires de Premier League et ses stars intern
- ationales. Pour enrichir cette expérience de visionnage\, CANAL+ propose 
- ce
+UID:e40171b4aecf8e33d5b006286a0f1691829121b2@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261109T232700Z
+DTEND:20261110T010800Z
+SUMMARY:Football · Football : Premier League | Brighton & Hove Albion / Br
+ entford (Canal+ Foot)
+DESCRIPTION:Brighton accueille Brentford pour la 10e journée de Premier Le
+ ague. Les Seagulls veulent s'imposer à domicile pour valider leurs ambiti
+ ons européennes. Face à eux\, des Bees rigoureux comptent sur leur force
+  collective pour ramener des points. Un duel tactique indécis entre deux 
+ é
 LOCATION:Canal+ Foot
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -27,9 +27,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:50f75b3e408ba5f1ff8087f051baff7c41e3b595@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T000000Z
-DTEND:20261110T020500Z
+DTEND:20261110T023000Z
 SUMMARY:Basket-ball · Detroit Pistons / Washington Wizards (DAZN 2)
 DESCRIPTION:Basket-ball. NBA Saison régulière. — Diffusion d'un match d
  e NBA (National Basketball Association)\, la ligue américaine de basketba
@@ -45,7 +45,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:2427583cff20bf0d2d5abb92a7108b3c851cba42@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T000000Z
 DTEND:20261110T030000Z
 SUMMARY:MMA · MMA : Cage Warriors (RMC Sport 1)
@@ -61,7 +61,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:b2f61c70ddafdbbceb40a9c4d379d01698443128@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T000000Z
 DTEND:20261110T024500Z
 SUMMARY:Basket-ball · Basket-ball : NBA | Detroit Pistons / Washington Wiz
@@ -77,7 +77,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:06e8cd6baa191aa808e314d84a165d3094f89a47@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T030000Z
 DTEND:20261110T060000Z
 SUMMARY:Hockey sur glace · Hockey sur glace : NHL | San Jose Sharks / New 
@@ -93,9 +93,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:56198bd533591dff7e9eec93008649ca65899495@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T061200Z
-DTEND:20261110T075600Z
+DTEND:20261110T063300Z
 SUMMARY:Football · Football : Premier League | Arsenal / Hull City (Canal+
   Foot)
 DESCRIPTION:Les Gunners d'Arsenal\, champions d'Angleterre en titre\, reço
@@ -110,10 +110,10 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:c0e11226ec7488a21df63f1dfb09480d2be5ea98@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261110T144700Z
-DTEND:20261110T163100Z
+UID:f8e22284396cf2875effe7a68992233ef40d50b6@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261110T145800Z
+DTEND:20261110T163500Z
 SUMMARY:Football · Football : Ligue des champions | FK Bodø/Glimt / Lille
   (Canal+ Foot)
 DESCRIPTION:Avec deux défaites en deux matchs\, Lille était déjà dos au
@@ -129,9 +129,25 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:3323783a0550f776c3e215a91137949a77f42a7b@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261110T163100Z
+UID:49e46c3cf376e48b2c08997aea348b275a53b74a@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261110T153200Z
+DTEND:20261110T162900Z
+SUMMARY:MotoGP · Moto 2 : Grand Prix du Qatar | Grand Prix du Qatar (Canal
+ + Sport 360)
+DESCRIPTION:Direction le Circuit international de Lusail\, situé non loin 
+ de Doha\, pour suivre la course du Grand Prix du Qatar de moto2.
+LOCATION:Canal+ Sport 360
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1b09327accfeb6ba69c525bc54abb5598ac6d1b2@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261110T163500Z
 DTEND:20261110T181400Z
 SUMMARY:Football · Football : Ligue des champions | Villarreal / Paris-SG 
  (Canal+ Foot)
@@ -149,7 +165,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:acb36150a18d687b3b7351c20c222e925afc2ab7@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T170000Z
 DTEND:20261110T190000Z
 SUMMARY:Basket-ball · Balkan Botevgrad / PAOK Thessaloniki (EuroLeague TV)
@@ -163,7 +179,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:8678f9520257e04318d05c23144f27f683990067@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T170000Z
 DTEND:20261110T190000Z
 SUMMARY:Basket-ball · Neptunas Klaipeda / Slask Wroclaw (EuroLeague TV)
@@ -177,7 +193,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:7983a25b74faf21c8bdbe47f36cdcac56af9a199@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T170000Z
 DTEND:20261110T190000Z
 SUMMARY:Basket-ball · U-BT Cluj-Napoca / Turk Telekom Ankara (EuroLeague T
@@ -192,7 +208,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:7bb7411cc9b70aa2a9aa7b79ebba29ba9d740fdb@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T183000Z
 DTEND:20261110T203000Z
 SUMMARY:Basket-ball · Cosea JL Bourg-en-Bresse / Buducnost VOLI Podgorica 
@@ -207,7 +223,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:58711070eb28f7f342fb36954612c0f7c7574bfc@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T190000Z
 DTEND:20261110T210000Z
 SUMMARY:Basket-ball · Dolomiti Energia Trento / Tofas Bursa (EuroLeague TV
@@ -222,7 +238,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:0103df671d2007948716ee14cdce6419eb2db187@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T190000Z
 DTEND:20261110T210000Z
 SUMMARY:Basket-ball · Rostock Seawolves / Cedevita Olimpija Ljubljana (Eur
@@ -237,7 +253,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c8364c547fc0b5e5fb6b780bc21f15f1afd3ff8c@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T193000Z
 DTEND:20261110T213000Z
 SUMMARY:Basket-ball · Kids&Us Manresa / BOSNA BH Telecom Sarajevo (EuroLea
@@ -252,7 +268,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:f2cbd07d5d12352435ea613a19886034604d7e84@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261110T193000Z
 DTEND:20261110T213000Z
 SUMMARY:Basket-ball · London Lions / Umana Reyer Venice (EuroLeague TV)
@@ -266,7 +282,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:fd349fa47dd52dceae7671d95928aba97d949238@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T000000Z
 DTEND:20261111T030000Z
 SUMMARY:Hockey sur glace · Hockey sur glace : NHL | Montréal Canadiens / 
@@ -282,7 +298,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ce58f5740d031cf0565cff38742ffba78b462e5a@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T000000Z
 DTEND:20261111T020000Z
 SUMMARY:Basket-ball · Basket-ball : NCAA | Duke / Michigan State (beIN SPO
@@ -298,7 +314,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:3c13103b1b5b57716d8671a34fea221a790d62e8@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T010000Z
 DTEND:20261111T033000Z
 SUMMARY:Basket-ball · Philadelphia 76ers / Boston Celtics (DAZN 2)
@@ -316,7 +332,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:5e37b9d7c86ef8b9d8bf0b81983f9cfaba842d82@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T010000Z
 DTEND:20261111T034500Z
 SUMMARY:Basket-ball · Basket-ball : NBA | Philadelphia 76ers / Boston Celt
@@ -332,7 +348,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:8fe27381132c880a6be285d898b29b43681dbe5b@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T040000Z
 DTEND:20261111T070000Z
 SUMMARY:Basket-ball · Portland Trail Blazers / Oklahoma City Thunder (DAZN
@@ -351,7 +367,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c61cda625820686ba5b593bc1d06facff0d5dc32@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T040000Z
 DTEND:20261111T064500Z
 SUMMARY:Basket-ball · Basket-ball : NBA | Portland Trail Blazers / Oklahom
@@ -367,7 +383,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:93370a7ae420ee5f9ea61442c2320d98ace071e5@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T082000Z
 DTEND:20261111T100400Z
 SUMMARY:Football · Football : Ligue des champions | AEK Athènes / Real Ma
@@ -385,8 +401,26 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:fb38f269e571fe6a79271cdb550aafdf5ab37fee@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261111T090000Z
+DTEND:20261111T110000Z
+SUMMARY:Football · Brest / Lyon (DAZN 1)
+DESCRIPTION:Football. Ligue 1 McDonald's 10e  journée . — Diffusion d'un
+  match de Ligue 1\, championnat de football opposant dix-huit clubs profes
+ sionnels français. Le championnat de France de football de 1re division e
+ st appelé D1 de 1972 à 2002\, puis il devient la Ligue 1. De 2017 à 202
+ 0\, il s'appelle Ligue 1 Conforama pour des raisons
+LOCATION:DAZN 1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:2b3becaca8e5270af16106f649ef230f42d6fc5a@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T100400Z
 DTEND:20261111T114700Z
 SUMMARY:Football · Football : Ligue des champions | Lens / Côme (Canal+ F
@@ -405,7 +439,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:a5be0ac24b36744b97a5828cd1c77bd20f90de61@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T160000Z
 DTEND:20261111T180000Z
 SUMMARY:Basket-ball · Bahcesehir College Istanbul / Lietkabelis Panevezys 
@@ -420,7 +454,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c0811cf3cc0714f377b31ebdad4346230659d810@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T163000Z
 DTEND:20261111T183000Z
 SUMMARY:Basket-ball · Siauliai Basketball / La Laguna Tenerife (EuroLeague
@@ -435,7 +469,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:63b5135d60a283162d3e7a47eeeaff5732586f4a@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T163000Z
 DTEND:20261111T183000Z
 SUMMARY:Basket-ball · France / Grande-Bretagne (L'Equipe)
@@ -453,7 +487,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:370b9da725d04beea5b6dbddfdd6914fce63cde5@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T163000Z
 DTEND:20261111T183000Z
 SUMMARY:Basket-ball · Basket-ball : Qualifications à l'EuroBasket fémini
@@ -472,7 +506,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e1439cb6583ba45640f07b899619f0cfb4e630c3@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T180000Z
 DTEND:20261111T200000Z
 SUMMARY:Basket-ball · NINERS Chemnitz / Napoli Basketball (EuroLeague TV)
@@ -486,7 +520,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c9c96bbe06cb1cba4ca8ef4a757bdc1ae699f690@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T180000Z
 DTEND:20261111T200000Z
 SUMMARY:Basket-ball · Aris Thessaloniki / Riga Zelli (EuroLeague TV)
@@ -500,7 +534,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:b82dccaaba5915a968fb1dc54f7e472567f74dad@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T183000Z
 DTEND:20261111T203000Z
 SUMMARY:Basket-ball · Baglietto Derthona Tortona / Hapoel Midtown Jerusale
@@ -515,7 +549,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:76a3a053e46c03706a69c2cd436e24cbe01c8cbc@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T190000Z
 DTEND:20261111T210000Z
 SUMMARY:Basket-ball · Roma Basketball / ratiopharm ulm (EuroLeague TV)
@@ -529,7 +563,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ce07160c563c8a3e24271db4d4b99102ea95ea7d@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T190000Z
 DTEND:20261111T210000Z
 SUMMARY:Basket-ball · Le Mans Sarthe Basket / Recoletas Salud San Pablo Bu
@@ -544,7 +578,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:f2158b4c00d61055b862f4c7099829be63e1ea84@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T190000Z
 DTEND:20261111T204500Z
 SUMMARY:Handball · Handball : Ligue Butagaz Energie | Chambray / Brest (be
@@ -563,7 +597,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:997750a6d454819601e34033204876397928ff91@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T194500Z
 DTEND:20261111T214500Z
 SUMMARY:Basket-ball · Partizan Mozzart Bet Belgrade / Kosner Baskonia Vito
@@ -578,7 +612,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ef31c4f300433d9d06f5332c76a30e0ba695583b@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T194500Z
 DTEND:20261111T214500Z
 SUMMARY:Basket-ball · Paris Basketball / Fenerbahce Tarfin Istanbul (EuroL
@@ -593,7 +627,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c86a0aa3d45303a847dfe2475c3320e000dd7fcb@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T194500Z
 DTEND:20261111T220000Z
 SUMMARY:Basket-ball · Basket-ball : Euroligue masculine | Paris Basketball
@@ -612,7 +646,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:85f8f33725667e3dc143479df5b406184874bdcc@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261111T195000Z
 DTEND:20261111T221000Z
 SUMMARY:Football · Football : Ligue des champions féminine | Juventus Tur
@@ -631,7 +665,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:7a4ca81f29af17ee409647141d26fee68c663242@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261112T000000Z
 DTEND:20261112T023000Z
 SUMMARY:Basket-ball · New York Knicks / Cleveland Cavaliers (DAZN 2)
@@ -649,7 +683,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:f06e808268d6b90f7d33deae36a232860010bd2b@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261112T000000Z
 DTEND:20261112T023000Z
 SUMMARY:Basket-ball · Basket-ball : NBA | New York Knicks / Cleveland Cava
@@ -665,7 +699,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:9300db3c5cdd119f856f8d00135b474b029b29d5@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261112T000000Z
 DTEND:20261112T030000Z
 SUMMARY:Hockey sur glace · Hockey sur glace : NHL | Buffalo Sabres / Tampa
@@ -681,7 +715,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e345d4a5b33d07d26f9c3a93942c46b881542e04@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261112T023000Z
 DTEND:20261112T050000Z
 SUMMARY:Basket-ball · Basket-ball : NBA | Houston Rockets / Golden State W
@@ -697,7 +731,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:f9fc03ef26a2b45a78f2508eda015166ea0d5d40@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261112T170000Z
 DTEND:20261112T200000Z
 SUMMARY:Hockey sur glace · Hockey sur glace : NHL | Seattle Kraken / Carol
@@ -713,7 +747,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:479562c9e764ec36174dced5b3558f30fdd0fd0c@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261112T190000Z
 DTEND:20261112T210000Z
 SUMMARY:Basket-ball · Skyliners Frankfurt / Maxima Roma (EuroLeague TV)
@@ -727,7 +761,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bd14392e78b397a504c3e11d77ca0f8fb2155603@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261112T190500Z
 DTEND:20261112T210500Z
 SUMMARY:Basket-ball · Maccabi Rapyd Tel Aviv / Hapoel IBI Tel Aviv (EuroLe
@@ -742,7 +776,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:b3f252d56c5fd79d47dcf3ccf5133ff0b3144373@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261112T190500Z
 DTEND:20261112T213000Z
 SUMMARY:Basket-ball · Basket-ball : Euroligue masculine | Olympiakos / Dub
@@ -758,7 +792,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:317cd376fbdc065145d028d0ff0215e35dcd9ce9@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261112T191500Z
 DTEND:20261112T211500Z
 SUMMARY:Basket-ball · Olympiacos Piraeus / Dubai Basketball (EuroLeague TV
@@ -773,7 +807,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:3e96cde93c6605b1ec071f77e60024c7c2d9cde9@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261112T193000Z
 DTEND:20261112T213000Z
 SUMMARY:Basket-ball · Valencia Basket / FC Bayern Munich (EuroLeague TV)
@@ -787,7 +821,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:f1bb3f768f1abf4ef77f2f9ed0a92ff71608695e@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261112T193000Z
 DTEND:20261112T213000Z
 SUMMARY:Basket-ball · Armani Olimpia Milan / Zalgiris Kaunas (EuroLeague T
@@ -802,7 +836,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:96e4ddc6749af1fd9499b92869da69946dffb3a0@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261112T200000Z
 DTEND:20261112T220000Z
 SUMMARY:Basket-ball · Real Madrid / Crvena Zvezda Meridianbet Belgrade (Eu
@@ -816,49 +850,14 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:b3be57eba6e6d98486595f225a072913f6de9bf6@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261112T230000Z
-DTEND:20261113T020000Z
-SUMMARY:MMA · MMA : UFC Fight Night (RMC Sport 1)
-DESCRIPTION:Poids légers  : Renato Moicano / Tom Nolan — Le combat princ
- ipal de l'UFC Fight Night 292 oppose le vétéran brésilien Renato Moican
- o au jeune espoir australien Tom Nolan\, dans la catégorie des poids lég
- ers (-70 kg). Cet événement se déroule au sein de la Meta Apex à Las V
- egas. Moicano (37 ans) affiche une solide expérience\,
-LOCATION:RMC Sport 1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:7a54aecfb52792903ede2b4fc49cb218296ae097@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261112T233000Z
-DTEND:20261113T010000Z
-SUMMARY:Handball · Handball : Daikin StarLigue (beIN SPORTS 3)
-DESCRIPTION:9e journée  : Paris-SG / Montpellier — Retransmission d'un m
- atch de la Daikin StarLigue\, la plus haute division du handball professio
- nnel masculin en France. Cette compétition gérée par la LNH a été cr
- éée en 1952\, et a changé de nom en 1995 pour devenir la Division 1. De
-  2016 à 2021\, cette compétition s'appellait Lidl
-LOCATION:beIN SPORTS 3
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8fd3ab7c75c74e1aa2873a1e374d4bf44f881381@programme-tv-sport
-DTSTAMP:20261109T184732Z
+UID:8750925aa570c296b4fdab3288ff5cfccb6a635c@programme-tv-sport
+DTSTAMP:20261110T024349Z
 DTSTART:20261113T000000Z
 DTEND:20261113T024500Z
-SUMMARY:Basket-ball · Basket-ball : NBA (beIN SPORTS 1)
-DESCRIPTION:Philadelphia 76ers / Toronto Raptors. NBA. Saison régulière. 
- — NBA. Saison régulière. Philadelphia 76ers / Toronto Raptors.
+SUMMARY:Basket-ball · Basket-ball : NBA | Philadelphia 76ers / Toronto Rap
+ tors (beIN SPORTS 1)
+DESCRIPTION:Diffusion d'un match de la NBA (National Basketball Association
+ )\, la prestigieuse ligue américaine de basketball.
 LOCATION:beIN SPORTS 1
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -867,308 +866,16 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:4c35f7e5ac798c69ca6e7d154874ab395de82319@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T020000Z
-DTEND:20261113T050000Z
-SUMMARY:MMA · MMA : Hexagone (RMC Sport 1)
-DESCRIPTION:Hexagone MMA 48 — Hexagone MMA 48 se déroule le 24 octobre 2
- 026 au Zénith Paris La Villette. Le gala parisien met en vedette deux Fra
- nçais\, le vice-champion du monde Samba Sima face à Leopold "Leonidas" G
- oi\, pour la ceinture des poids mouches (-57 kg). Avec également une cart
- e composée de plusieur
-LOCATION:RMC Sport 1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:505aa8e4ed7800169db128673484924301e48dce@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T021400Z
-DTEND:20261113T024500Z
-SUMMARY:Formule 1 · On Board F1 (Canal+ Sport 360)
-DESCRIPTION:Grand Prix du Brésil
-LOCATION:Canal+ Sport 360
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:c6bce4f521b7848eb52742c483809aa615cfe805@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T030000Z
-DTEND:20261113T050000Z
-SUMMARY:Football · Football (beIN SPORTS 1)
-DESCRIPTION:Football. — A suivre\, des rediffusions d'affiches disputées
-  dans le cadre de compétitions diffusées sur les chaînes du groupe. Par
- mi les programmes phares\, entre autres : Liga espagnole\, Bundesliga\, S
- üper Lig turque\, Championnat du Portugal\, Ligue 1 et Ligue 2 française
- s\, Coupe de la Ligue a
-LOCATION:beIN SPORTS 1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:bd5ce7dc1327e10a23f73337a1e54348165636eb@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T050000Z
-DTEND:20261113T070000Z
-SUMMARY:Football · Football (beIN SPORTS 1)
-DESCRIPTION:Football. — A suivre\, des rediffusions d'affiches disputées
-  dans le cadre de compétitions diffusées sur les chaînes du groupe. Par
- mi les programmes phares\, entre autres : Liga espagnole\, Bundesliga\, S
- üper Lig turque\, Championnat du Portugal\, Ligue 1 et Ligue 2 française
- s\, Coupe de la Ligue a
-LOCATION:beIN SPORTS 1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:27ab65fc68e0ffe55c9d1c7777d10c5372c5e297@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T050000Z
-DTEND:20261113T070000Z
-SUMMARY:Football · Football (beIN SPORTS 2)
-DESCRIPTION:Football. — A suivre\, des rediffusions d'affiches disputées
-  dans le cadre de compétitions diffusées sur les chaînes du groupe. Par
- mi les programmes phares\, entre autres : Liga espagnole\, Bundesliga\, S
- üper Lig turque\, Championnat du Portugal\, Ligue 1 et Ligue 2 française
- s\, Coupe de la Ligue a
-LOCATION:beIN SPORTS 2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:b6940b625200bcdf4cbb9f84ff361c03c8958ef0@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T070000Z
-DTEND:20261113T090000Z
-SUMMARY:Football · Football (beIN SPORTS 1)
-DESCRIPTION:Football. — A suivre\, des rediffusions d'affiches disputées
-  dans le cadre de compétitions diffusées sur les chaînes du groupe. Par
- mi les programmes phares\, entre autres : Liga espagnole\, Bundesliga\, S
- üper Lig turque\, Championnat du Portugal\, Ligue 1 et Ligue 2 française
- s\, Coupe de la Ligue a
-LOCATION:beIN SPORTS 1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:14a87980e789c54fc1f9e3b4dd23ea48a93b1e31@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T070000Z
-DTEND:20261113T090000Z
-SUMMARY:Football · Football (beIN SPORTS 2)
-DESCRIPTION:Football. — A suivre\, des rediffusions d'affiches disputées
-  dans le cadre de compétitions diffusées sur les chaînes du groupe. Par
- mi les programmes phares\, entre autres : Liga espagnole\, Bundesliga\, S
- üper Lig turque\, Championnat du Portugal\, Ligue 1 et Ligue 2 française
- s\, Coupe de la Ligue a
-LOCATION:beIN SPORTS 2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8a3d7c1fbcc1404c45c012de3c11eec34e81a1de@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T074500Z
-DTEND:20261113T080000Z
-SUMMARY:MMA · Format ONE Championship (RMC Sport 1)
-DESCRIPTION:Le ONE Championship est la prestigieuse organisation qui réuni
- t chaque semaine les meilleurs combattants du monde entier pour des affron
- tements spectaculaires en MMA\, Muay Thai et kickboxing. Un rendez-vous in
- contournable pour les passionnés de sport de combat\, diffusé en direct 
-LOCATION:RMC Sport 1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:4a8668c85edc3eb514d10f5f2b4d6d26f8f8270a@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T082800Z
-DTEND:20261113T101100Z
-SUMMARY:Football · Manchester United / Aston Villa (Canal+ Foot)
-DESCRIPTION:Football. Premier League. 10e journée. — Premier League. 10e
-  journée. Manchester United / Aston Villa.
-LOCATION:Canal+ Foot
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:f6e61593e2bb877c2aeb1f20eb503b189d2e0b77@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T085000Z
-DTEND:20261113T103600Z
-SUMMARY:Formule 1 · Formule 1 : Grand Prix du Mexique (Canal+ Sport)
-DESCRIPTION:La course — A moins d'un concours de circonstances peu probab
- le\, Kimi Antonelli (Mercedes) devrait être sacré ce week-end à l'issue
-  du Grand Prix du Mexique. Le jeune Italien n'a en effet besoin que de deu
- x petits points (soit une neuvième place) pour assurer définitivement le
-  titre avant la
-LOCATION:Canal+ Sport
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:ffd22725bbbc73c84c1870162f40ca696540b977@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T090000Z
+UID:71a0806cc7006088995878839923069783ef5c80@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261113T080000Z
 DTEND:20261113T110000Z
-SUMMARY:Football · Football (beIN SPORTS 2)
-DESCRIPTION:Football. — A suivre\, des rediffusions d'affiches disputées
-  dans le cadre de compétitions diffusées sur les chaînes du groupe. Par
- mi les programmes phares\, entre autres : Liga espagnole\, Bundesliga\, S
- üper Lig turque\, Championnat du Portugal\, Ligue 1 et Ligue 2 française
- s\, Coupe de la Ligue a
-LOCATION:beIN SPORTS 2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:5ac5c560a502075c61ce0b49059b95b1793dd62a@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T101100Z
-DTEND:20261113T115300Z
-SUMMARY:Football · Sunderland / Chelsea (Canal+ Foot)
-DESCRIPTION:Football. Premier League. 10e journée. — Premier League. 10e
-  journée. Sunderland / Chelsea.
-LOCATION:Canal+ Foot
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:ed2222f5cf90b0cc37ec49dbf84dd97db1b32f06@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T110000Z
-DTEND:20261113T130000Z
-SUMMARY:Football · Football (beIN SPORTS 2)
-DESCRIPTION:Football. — A suivre\, des rediffusions d'affiches disputées
-  dans le cadre de compétitions diffusées sur les chaînes du groupe. Par
- mi les programmes phares\, entre autres : Liga espagnole\, Bundesliga\, S
- üper Lig turque\, Championnat du Portugal\, Ligue 1 et Ligue 2 française
- s\, Coupe de la Ligue a
-LOCATION:beIN SPORTS 2
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:e712d9cd83c1f7621b16c7765decdb7b8618fa80@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T112200Z
-DTEND:20261113T130600Z
-SUMMARY:Rugby · Rugby : Top 14 (Canal+ Sport)
-DESCRIPTION:8e journée : Bordeaux-Bègles / Bayonne — Après huit journ
- ées\, Bordeaux-Bègles talonnait le champion en titre Toulouse. Le club g
- irondin\, qui ne comptait qu'un point de retard sur le leader\, compte bie
- n frapper fort avec la réception de Bayonne.
-LOCATION:Canal+ Sport
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:85ba5bcdaaadf016080e85eb39d07c6439eea931@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T130600Z
-DTEND:20261113T144800Z
-SUMMARY:Rugby · Rugby : Top 14 (Canal+ Sport)
-DESCRIPTION:8e journée : Pau / Toulouse — Le stade du Hameau accueille l
- 'affiche de la 8e journée du Top 14 entre la Section Paloise et le Stade 
- Toulousain. Ce match s'annonce comme une confrontation au sommet du champi
- onnat\, puisqu'il oppose le leader toulousain au 3e\, Pau. Les Béarnais\,
-  en grande forme sur ce début d'e
-LOCATION:Canal+ Sport
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:46112002eb4c2b0b00e38077f94d0d4c021dcc08@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T133000Z
-DTEND:20261113T151500Z
-SUMMARY:Basket-ball · Basket-ball : NBA (beIN SPORTS 3)
-DESCRIPTION:Saison régulière : Detroit Pistons / Philadelphia 76ers — D
- iffusion d'un match de NBA (National Basketball Association)\, la ligue am
- éricaine de basketball. Depuis 1946\, les parquets américains et canadie
- ns voient s'affronter des franchises de légende comme les Lakers\, les Bu
- lls\, les Celtics ou bien encore les Spurs. Des joueurs NBA sont
-LOCATION:beIN SPORTS 3
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:e34bb7b201a2d7921b658973a20949bec855b6e6@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T151500Z
-DTEND:20261113T170000Z
-SUMMARY:Basket-ball · Basket-ball : NBA (beIN SPORTS 3)
-DESCRIPTION:Saison régulière : San Antonio Spurs / Dallas Mavericks — D
- iffusion d'un match de NBA (National Basketball Association)\, la ligue am
- éricaine de basketball. Depuis 1946\, les parquets américains et canadie
- ns voient s'affronter des franchises de légende comme les Lakers\, les Bu
- lls\, les Celtics ou bien encore les Spurs. Des joueurs NBA sont
-LOCATION:beIN SPORTS 3
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:2904dfbe640654547502d407b1760a1f073e36b8@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T151600Z
-DTEND:20261113T170000Z
-SUMMARY:Football · Nottingham Forest / Manchester City (Canal+ Foot)
-DESCRIPTION:Football. Premier League. 10e journée. — Premier League. 10e
-  journée. Nottingham Forest / Manchester City.
-LOCATION:Canal+ Foot
+SUMMARY:MMA · Jiu-jitsu brésilien : UFC BJJ | Gilbert Burns / Gabriel Alm
+ eida (RMC Sport 1)
+DESCRIPTION:Jitsu — L'UFC a lancé sa propre organisation de grappling ap
+ pelée UFC BJJ. Les événements se déroulent généralement à l'UFC APE
+ X à Las Vegas au sein d'une aire de combat appelée The Bowl\,
+LOCATION:RMC Sport 1
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT15M
@@ -1177,7 +884,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:4c36255aca11149975dad51b499855e06478e0c7@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261113T173000Z
 DTEND:20261113T193000Z
 SUMMARY:Basket-ball · Anadolu Efes Istanbul / Virtus Bologna (EuroLeague T
@@ -1191,16 +898,14 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:a4a4ea150c336f1c38fa2865147097ba94729ffa@programme-tv-sport
-DTSTAMP:20261109T184732Z
+UID:c79dbfe2122d9cb13db76c8a8bd20f3cc6bc65b9@programme-tv-sport
+DTSTAMP:20261110T024349Z
 DTSTART:20261113T184500Z
 DTEND:20261113T210000Z
-SUMMARY:Handball · Handball : Daikin StarLigue (beIN SPORTS MAX 4)
+SUMMARY:Handball · Handball : Daikin StarLigue | Chambéry / Nîmes (beIN 
+ SPORTS MAX 4)
 DESCRIPTION:Retransmission d'un match de la Daikin StarLigue\, la plus haut
- e division du handball professionnel masculin en France. Cette compétitio
- n gérée par la LNH a été créée en 1952\, et a changé de nom en 1995
-  pour devenir la Division 1. De 2016 à 2021\, cette compétition s'appell
- ait Lidl
+ e division du handball professionnel masculin en France.
 LOCATION:beIN SPORTS MAX 4
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1210,7 +915,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:6494a9d1d7ffd4b860ab29fef54e3086482e1aa9@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261113T191500Z
 DTEND:20261113T211500Z
 SUMMARY:Basket-ball · Panathinaikos AKTOR Athens / FC Barcelona (EuroLeagu
@@ -1225,7 +930,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:5116ab43c5bb8fdbc8b426cd425896b2258af367@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261113T193000Z
 DTEND:20261113T213000Z
 SUMMARY:Basket-ball · LDLC ASVEL Villeurbanne / Besiktas Istanbul (EuroLea
@@ -1239,14 +944,17 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:a0bd0841e4a86363c5d563ec9f4153570bd4d9a4@programme-tv-sport
-DTSTAMP:20261109T184732Z
+UID:a51acb5382256f5ecf4652b228450fbc661287a2@programme-tv-sport
+DTSTAMP:20261110T024349Z
 DTSTART:20261113T193000Z
 DTEND:20261113T214500Z
-SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 2)
-DESCRIPTION:ASVEL Lyon-Villeurbanne / Besiktas. Euroligue masculine. 11e jo
- urnée. — Euroligue masculine. 11e journée. ASVEL Lyon-Villeurbanne / B
- esiktas.
+SUMMARY:Basket-ball · Basket-ball : Euroligue masculine | ASVEL Lyon-Ville
+ urbanne / Besiktas (beIN SPORTS 2)
+DESCRIPTION:L'ASVEL affronte les turcs de Beşiktaş à la LDLC Arena dans 
+ une rencontre européenne qui s'annonce disputée. Côté lyonnais\, Patri
+ ck Mills fera parler son expérience\, tandis que Scottie Wilbekin cherche
+ ra à dynamiser l'attaque turque. L'ASVEL devra maîtriser le rythme et li
+ miter l
 LOCATION:beIN SPORTS 2
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1255,8 +963,26 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:11cda762e5e0988cfd3db0aee89a81180f709583@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261113T200000Z
+DTEND:20261113T220000Z
+SUMMARY:Rugby · Rugby : Championnat des nations | France / Afrique du Sud 
+ (TF1)
+DESCRIPTION:Direction le Stade de France de Saint-Denis pour suivre une aff
+ iche explosive qui oppose le XV de France aux Springboks dans le cadre du 
+ Championnat des nations de rugby. Privés de nombreux joueurs blessés\, l
+ es coéquipiers de Damian Penaud vont sans nul doute se donner tous les m
+LOCATION:TF1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:239f267ea4aeb4e370546c4c89ecdbc8e37c483d@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261113T200000Z
 DTEND:20261113T220000Z
 SUMMARY:Rugby · France / Afrique du Sud (TF1)
@@ -1272,26 +998,8 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:55f56aec58380eee5391d81b3b5a7b1e950aea32@programme-tv-sport
-DTSTAMP:20261109T184732Z
-DTSTART:20261113T220000Z
-DTEND:20261114T000000Z
-SUMMARY:Football · Football (beIN SPORTS 1)
-DESCRIPTION:Football. — A suivre\, des rediffusions d'affiches disputées
-  dans le cadre de compétitions diffusées sur les chaînes du groupe. Par
- mi les programmes phares\, entre autres : Liga espagnole\, Bundesliga\, S
- üper Lig turque\, Championnat du Portugal\, Ligue 1 et Ligue 2 française
- s\, Coupe de la Ligue a
-LOCATION:beIN SPORTS 1
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:3c56e303098fc4ba16a978f109154cc1a84d6650@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261113T235400Z
 DTEND:20261114T013500Z
 SUMMARY:Football · Football : Premier League (Canal+ Foot)
@@ -1305,7 +1013,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:a91cd3d455057a01ad0d16c1714870496abfcd8e@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T010000Z
 DTEND:20261114T015700Z
 SUMMARY:MotoGP · Moto GP\, 1000 était une fois (Canal+ Sport)
@@ -1323,7 +1031,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:8622136f8478331b12e024db1172bb82c0e3fd7a@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T010000Z
 DTEND:20261114T030000Z
 SUMMARY:Football · Football (beIN SPORTS 1)
@@ -1341,7 +1049,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:3715a5ae4aa2a152da511b21f5a7f2ecd6493855@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T030000Z
 DTEND:20261114T050000Z
 SUMMARY:Football · Football (beIN SPORTS 1)
@@ -1359,7 +1067,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d9b66b870ca21d741d375fb92475ff8268df62b8@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T050000Z
 DTEND:20261114T053000Z
 SUMMARY:MMA · Format UFC (RMC Sport 1)
@@ -1373,7 +1081,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:6e2a9ac39c86c2d0574bd1eb5efb0d082124a55b@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T050000Z
 DTEND:20261114T070000Z
 SUMMARY:Football · Football (beIN SPORTS 1)
@@ -1391,7 +1099,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:a8593bd52b7c5972b0c7399d50434475513e559b@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T053000Z
 DTEND:20261114T060000Z
 SUMMARY:MMA · Format UFC (RMC Sport 1)
@@ -1405,7 +1113,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20b2f16e4e09417c256314734af92bb61261db83@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T070000Z
 DTEND:20261114T083000Z
 SUMMARY:Handball · Handball : Daikin StarLigue (beIN SPORTS 3)
@@ -1418,8 +1126,22 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:48800742966a1793fe6b678200d567341475b325@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261114T081100Z
+DTEND:20261114T084200Z
+SUMMARY:Formule 1 · On Board F1 (Canal+ Sport 360)
+DESCRIPTION:Grand Prix du Brésil
+LOCATION:Canal+ Sport 360
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:b2a170e6cea0d2293d5766b76a7fe184bc593493@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T081500Z
 DTEND:20261114T100000Z
 SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 1)
@@ -1433,8 +1155,24 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:3925329e7a634b1cdd9d5768ce896a36c2283abf@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261114T100000Z
+DTEND:20261114T114500Z
+SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 1)
+DESCRIPTION:ASVEL Lyon-Villeurbanne / Besiktas. Euroligue masculine. 11e jo
+ urnée. — Euroligue masculine. 11e journée. ASVEL Lyon-Villeurbanne / B
+ esiktas.
+LOCATION:beIN SPORTS 1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:f3e851417be9e6b4539ad0dfb23f882acee23c00@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T110000Z
 DTEND:20261114T130000Z
 SUMMARY:Football · Football : Ligue 2 BKT (beIN SPORTS 2)
@@ -1452,7 +1190,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cb820325649e8fb5a4556d74cacf30cc283b7b21@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T123000Z
 DTEND:20261114T143000Z
 SUMMARY:Football · Football (beIN SPORTS 1)
@@ -1470,7 +1208,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:eeca16e0d43a8e85e343a557e3c9f3edbdd9528b@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T133000Z
 DTEND:20261114T151500Z
 SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 3)
@@ -1485,7 +1223,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:2a7670b8103fa67885b497380ca4774263f86915@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T150000Z
 DTEND:20261114T170000Z
 SUMMARY:Football · Football (beIN SPORTS 1)
@@ -1503,7 +1241,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:2801bf0827a8788a0f97e1b5af75aec8a98cd100@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T170000Z
 DTEND:20261114T190000Z
 SUMMARY:Football · Football (beIN SPORTS 1)
@@ -1521,7 +1259,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:13f215d39c289e92698bf7703ee00bf13c1ad77e@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T180000Z
 DTEND:20261114T210000Z
 SUMMARY:Hockey sur glace · Hockey sur glace : NHL (beIN SPORTS MAX 4)
@@ -1536,7 +1274,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:a41952d8354e046dc4f31e8021ee80e39aeb4baf@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T181500Z
 DTEND:20261114T190000Z
 SUMMARY:Football · Multiligue 2 (beIN SPORTS 2)
@@ -1552,7 +1290,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:24321bcb29a492aaf3ce054f813b23ef01b99416@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T190000Z
 DTEND:20261114T210000Z
 SUMMARY:Football · Football : Ligue 2 BKT (beIN SPORTS 2)
@@ -1570,7 +1308,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:78dab085050c59e1ced6a88d6a31cbb7623c5ac5@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T193000Z
 DTEND:20261114T210000Z
 SUMMARY:MMA · MMA : PFL (RMC Sport 1)
@@ -1586,7 +1324,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:034dfd9fca31f974435f5c98cce43825cf62e6df@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261114T210000Z
 DTEND:20261114T230000Z
 SUMMARY:Football · Football (beIN SPORTS 1)
@@ -1604,7 +1342,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:0d51d07cad35a018716e9ce551ad2c7ccaaca6f8@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T002500Z
 DTEND:20261115T050000Z
 SUMMARY:Basket-ball · Cleveland Cavaliers / Dallas Mavericks (DAZN 2)
@@ -1622,7 +1360,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:6517df09a44d8a7b91134ab4fc2ae87110198a77@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T004000Z
 DTEND:20261115T022300Z
 SUMMARY:Rugby · Rugby : Top 14 (Canal+ Sport)
@@ -1636,7 +1374,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:4d2b8335d7fd2cf59ad783875f02d4f491039a53@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T010000Z
 DTEND:20261115T043000Z
 SUMMARY:MMA · MMA : UFC Fight Night (RMC Sport 1)
@@ -1655,7 +1393,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e8a0275797fdd6e89efca84fb7b90908ffd9e108@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T010000Z
 DTEND:20261115T030000Z
 SUMMARY:Football · Football : Ligue 2 BKT (beIN SPORTS 1)
@@ -1673,7 +1411,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:5ff0162eeaaa96abd401a498cda112c8b475b3f2@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T012000Z
 DTEND:20261115T031000Z
 SUMMARY:Formule 1 · Formule 1 : Grand Prix du Brésil (Canal+ Sport 360)
@@ -1691,7 +1429,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:35cb9b5750eb115149aed2bbcae4475f53b9719b@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T065500Z
 DTEND:20261115T083800Z
 SUMMARY:Formule 1 · Formule 1 : Grand Prix de Sao Paulo (Canal+ Sport)
@@ -1707,7 +1445,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:5f36bfaa1b1cbf28b74a34f1432c61a38384cfd0@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T065500Z
 DTEND:20261115T080300Z
 SUMMARY:MotoGP · Moto GP : Grand Prix du Qatar (Canal+ Sport 360)
@@ -1723,7 +1461,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:72471c98a8c7a121875f6f6e4019114b65f257b9@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T070000Z
 DTEND:20261115T083000Z
 SUMMARY:Handball · Handball : Qualifications à l'Euro masculin (beIN SPOR
@@ -1738,7 +1476,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:22ade024c3c354aaea4f663d7a63f9efafe520a5@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T074200Z
 DTEND:20261115T092600Z
 SUMMARY:Football · FK Bodø/Glimt / Lille (Canal+ Foot)
@@ -1753,7 +1491,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:be63032f61953ab67816f90376e6579ab9e8cde3@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T080300Z
 DTEND:20261115T092500Z
 SUMMARY:MotoGP · Moto GP : Grand Prix du Qatar (Canal+ Sport 360)
@@ -1769,7 +1507,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:a5939c32623376e49b483852096d894bda281ccd@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T083000Z
 DTEND:20261115T101500Z
 SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 3)
@@ -1785,7 +1523,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:9cfd7fdab3838e772ef275dce79dd149245b0a1b@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T083800Z
 DTEND:20261115T102100Z
 SUMMARY:Rugby · Toulouse / Clermont-Auvergne (Canal+ Sport)
@@ -1800,7 +1538,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:639b95f5cffed1f5a6f120dd84e73d72facd30d2@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T092500Z
 DTEND:20261115T101000Z
 SUMMARY:MotoGP · Moto 3 : Grand Prix du Qatar (Canal+ Sport 360)
@@ -1816,7 +1554,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:b171f55e257aa014f082dbe87d1d084541ffc02e@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T095900Z
 DTEND:20261115T114300Z
 SUMMARY:Football · Lens / Côme (Canal+ Foot)
@@ -1834,7 +1572,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:16856a53c9f2119a5a210a57d21148bab431b67b@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T100000Z
 DTEND:20261115T114500Z
 SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 1)
@@ -1852,7 +1590,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ccbe27ce21aa525935bdde0ed4145a8c7bad031e@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T101000Z
 DTEND:20261115T105000Z
 SUMMARY:MotoGP · Moto 2 : Grand Prix du Qatar (Canal+ Sport 360)
@@ -1868,7 +1606,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:f41c23df8d8d79339a353002bcf43133c2e8d26d@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T102100Z
 DTEND:20261115T120500Z
 SUMMARY:Rugby · Castres / Racing 92 (Canal+ Sport)
@@ -1882,7 +1620,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dad2338d5478190762f5239fcd8a692316c15b08@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T105000Z
 DTEND:20261115T113500Z
 SUMMARY:MotoGP · Moto GP : Grand Prix du Qatar (Canal+ Sport 360)
@@ -1898,7 +1636,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:a11c1e762c57b8887377ab3bfda54e6e6aaf8149@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T110000Z
 DTEND:20261115T123000Z
 SUMMARY:Handball · Handball : Ligue des champions féminine EHF (beIN SPOR
@@ -1914,7 +1652,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:81c7d3bfc5b56e51d44d2de37c65c2b4f274a61c@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T113500Z
 DTEND:20261115T123500Z
 SUMMARY:MotoGP · Moto GP : Grand Prix du Qatar (Canal+ Sport 360)
@@ -1930,7 +1668,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d072e824ec7cd3c9c565b1d886ddfbdf178dbf6f@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T120500Z
 DTEND:20261115T135000Z
 SUMMARY:Rugby · Montpellier / Lyon (Canal+ Sport)
@@ -1944,7 +1682,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:b956dd4f15228ace4dd0951d8240d4fda9dd2e05@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T134000Z
 DTEND:20261115T143500Z
 SUMMARY:MotoGP · Moto 3 : Grand Prix du Qatar (Canal+ Sport 360)
@@ -1960,7 +1698,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:fbc698da67dba84ab9d90a78bf6aa93429738612@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T143500Z
 DTEND:20261115T152600Z
 SUMMARY:MotoGP · Moto 2 : Grand Prix du Qatar (Canal+ Sport 360)
@@ -1976,7 +1714,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:b110d1443b6a756dc42b5be418db944eee366f3b@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T155500Z
 DTEND:20261115T162600Z
 SUMMARY:MotoGP · Moto GP : Grand Prix du Qatar (Canal+ Sport 360)
@@ -1994,7 +1732,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:284ce2d1c09b8610c085f81f616142874efb6989@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T155700Z
 DTEND:20261115T174100Z
 SUMMARY:Rugby · Pau / Perpignan (Canal+ Sport)
@@ -2007,8 +1745,25 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:49dc27eb3c5a8e402f6298e432eea09099a35ad9@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261115T160000Z
+DTEND:20261115T163000Z
+SUMMARY:MMA · Format ONE Championship (RMC Sport 1)
+DESCRIPTION:Le ONE Championship est la prestigieuse organisation qui réuni
+ t chaque semaine les meilleurs combattants du monde entier pour des affron
+ tements spectaculaires en MMA\, Muay Thai et kickboxing. Un rendez-vous in
+ contournable pour les passionnés de sport de combat\, diffusé en direct 
+LOCATION:RMC Sport 1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:ea55ccb0d0f35054e0e1bf324f9c7c46d41d9191@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T170300Z
 DTEND:20261115T184700Z
 SUMMARY:Football · Villarreal / Paris-SG (Canal+ Foot)
@@ -2023,7 +1778,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:71c47d155b186bb9fa48e5eb19e6180cd205b52c@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T173000Z
 DTEND:20261115T191500Z
 SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 3)
@@ -2039,7 +1794,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:2d98724b1842abef6c1e619e574122747e6da61f@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T174100Z
 DTEND:20261115T192800Z
 SUMMARY:Rugby · Toulon / Stade Français Paris (Canal+ Sport)
@@ -2054,7 +1809,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:43f2b6a718698a3a746ab92295d7340fbc002d41@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T175500Z
 DTEND:20261115T211500Z
 SUMMARY:Basket-ball · Philadelphia 76ers / Indiana Pacers (DAZN 2)
@@ -2072,7 +1827,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bf400bc9adba2ebdb9670f5094692a28c7543337@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T190000Z
 DTEND:20261115T210000Z
 SUMMARY:Football · Football : Ligue 2 BKT (beIN SPORTS 1)
@@ -2090,7 +1845,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c4abf3c0124dfd1dd609b6653830473a4bc14b36@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T200000Z
 DTEND:20261115T220000Z
 SUMMARY:Basket-ball · Basket-ball : NCAA (beIN SPORTS MAX 5)
@@ -2105,7 +1860,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:5932db7dd673b93f99b127a25faab3a4b0f39e60@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T205500Z
 DTEND:20261116T000000Z
 SUMMARY:Basket-ball · Phoenix Suns / Los Angeles Lakers (DAZN 1)
@@ -2123,7 +1878,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d3655d3c1905121a87292a5d5e39ef33e505bf4d@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T220000Z
 DTEND:20261116T004500Z
 SUMMARY:Basket-ball · Basket-ball : NBA (beIN SPORTS 1)
@@ -2141,7 +1896,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c589109ca05b1814cf629908bbd0b960660c25c1@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T225900Z
 DTEND:20261116T004600Z
 SUMMARY:Formule 1 · Formule 1 : Grand Prix de Sao Paulo (Canal+ Sport)
@@ -2156,7 +1911,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bba2318097a5cf8769b9f698f3d35f32ec005371@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261115T230000Z
 DTEND:20261116T020000Z
 SUMMARY:MMA · MMA : UFC (RMC Sport 1)
@@ -2171,7 +1926,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:eb2c77faac42f674e87365716829c65c457ce9e6@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T010000Z
 DTEND:20261116T030000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2189,7 +1944,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:6a1a97b5a441a35f56fd97aac72561fc0373687d@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T030000Z
 DTEND:20261116T050000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2207,7 +1962,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:381b1c64198f6e256eb2992a5cb02c5a03130a81@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T050000Z
 DTEND:20261116T053000Z
 SUMMARY:MMA · Format UFC (RMC Sport 1)
@@ -2221,7 +1976,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e217f3949d2a6e1c109385062aaa15c08688ac1d@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T050000Z
 DTEND:20261116T070000Z
 SUMMARY:Football · Football (beIN SPORTS 1)
@@ -2239,7 +1994,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:3f9da54eb9fce725361514c28fe62b388305f155@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T050000Z
 DTEND:20261116T070000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2257,7 +2012,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:f81390dd86f5829b0f459f45aea9b8b75076339a@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T053000Z
 DTEND:20261116T060000Z
 SUMMARY:MMA · Format UFC (RMC Sport 1)
@@ -2271,7 +2026,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:1983002df5607badc36a54abbfbce2a2017397de@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T070000Z
 DTEND:20261116T090000Z
 SUMMARY:Football · Football (beIN SPORTS 1)
@@ -2289,7 +2044,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:93d2b9f398b65290751a21ee7d600f1513394dfd@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T070000Z
 DTEND:20261116T090000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2307,7 +2062,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d19dd9430bc05b8f247f5d721ad051a9d984a399@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T070000Z
 DTEND:20261116T083000Z
 SUMMARY:Handball · Handball : Ligue Butagaz Energie (beIN SPORTS 3)
@@ -2321,7 +2076,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:aa5597ed748d337004825c47757c6384807b4e44@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T090000Z
 DTEND:20261116T110000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2339,7 +2094,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:15d0f45a80b327247b72baa8deddf953b06c01a9@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T093000Z
 DTEND:20261116T094500Z
 SUMMARY:Basket-ball · Ça se passe sur beIN SPORTS (beIN SPORTS 1)
@@ -2353,7 +2108,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:109219ca8547b2187353234a22b5ab8a6133eaa2@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T094500Z
 DTEND:20261116T114500Z
 SUMMARY:Basket-ball · Basket-ball : NBA (beIN SPORTS 1)
@@ -2367,7 +2122,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:0793519434ff5c42978c4f1b7f0386c67b0ea070@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T103000Z
 DTEND:20261116T120000Z
 SUMMARY:Handball · Handball : Daikin StarLigue (beIN SPORTS 3)
@@ -2380,8 +2135,38 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:a2d4b75ed965c5c6dda4221b05f91c7219555263@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261116T130800Z
+DTEND:20261116T145100Z
+SUMMARY:Football · Manchester United / Aston Villa (Canal+ Foot)
+DESCRIPTION:Football. Premier League. 10e journée. — Premier League. 10e
+  journée. Manchester United / Aston Villa.
+LOCATION:Canal+ Foot
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1f8f5078db20cec8c1ee9ad9f1540ca2c3de806e@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261116T145100Z
+DTEND:20261116T163500Z
+SUMMARY:Football · Sunderland / Chelsea (Canal+ Foot)
+DESCRIPTION:Football. Premier League. 10e journée. — Premier League. 10e
+  journée. Sunderland / Chelsea.
+LOCATION:Canal+ Foot
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:cbd3f9bc61150dfbfcbb90446176e38612891074@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T150000Z
 DTEND:20261116T170000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2398,8 +2183,23 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:2b3f368f86c3213b9c8deb6ad2b451e8d4420048@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261116T163500Z
+DTEND:20261116T181800Z
+SUMMARY:Football · Nottingham Forest / Manchester City (Canal+ Foot)
+DESCRIPTION:Football. Premier League. 10e journée. — Premier League. 10e
+  journée. Nottingham Forest / Manchester City.
+LOCATION:Canal+ Foot
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:5447f54b82b3ad8c18e638eaa08e099162f2db5c@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T170000Z
 DTEND:20261116T190000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2417,7 +2217,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:607dd493aae4d776d0715acc4119f7f2f65a32d2@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T183500Z
 DTEND:20261116T190100Z
 SUMMARY:Football · Champions League Weekly (Canal+ Foot)
@@ -2431,7 +2231,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e09bfc009c7c9fc1000a59575e764a22bb6b55e4@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T190000Z
 DTEND:20261116T211500Z
 SUMMARY:Basket-ball · Basket-ball : Betclic Elite (La chaine l’Équipe)
@@ -2449,7 +2249,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:0e8f6f2375973ba164a3103d37c7fd64546301f0@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T190000Z
 DTEND:20261116T210000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2467,7 +2267,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:f6015a145858df30fe893500424296173dfc00a9@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T200000Z
 DTEND:20261116T214300Z
 SUMMARY:Rugby · La Rochelle / Bayonne (Canal+ Sport)
@@ -2481,7 +2281,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:1d7a7aa5be629f85cca7622987c30e8706eb3392@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T210000Z
 DTEND:20261116T230000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2499,7 +2299,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:5aa58f485597838cffabb5d7f92f0ef736f6a60d@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T230000Z
 DTEND:20261117T010000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2517,7 +2317,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:97fd62be35e5ad49b6916b15b2a26c20fc4d7b06@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261116T235500Z
 DTEND:20261117T031500Z
 SUMMARY:Basket-ball · Boston Celtics / Orlando Magic (DAZN 2)
@@ -2535,7 +2335,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:257efdbaa4d6218552d6f1ee28c068d61a5cc3ee@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T000000Z
 DTEND:20261117T024500Z
 SUMMARY:Basket-ball · Basket-ball : NBA (beIN SPORTS 1)
@@ -2551,7 +2351,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ad2ef3668566317ada8605e3462de3102bba5907@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T003000Z
 DTEND:20261117T033000Z
 SUMMARY:Hockey sur glace · Hockey sur glace : NHL (beIN SPORTS MAX 4)
@@ -2569,7 +2369,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:9bcb65832f856c92334346f3b6ed8a4b53ee7e7f@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T020000Z
 DTEND:20261117T050000Z
 SUMMARY:MMA · MMA : PFL (RMC Sport 1)
@@ -2585,7 +2385,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c433f8befb9750a06360d9ba00258a5244753208@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T050000Z
 DTEND:20261117T070000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2603,7 +2403,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:2e23898e7321ce2dd23fd2e377154a26a73a5a44@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T070000Z
 DTEND:20261117T083000Z
 SUMMARY:Handball · Handball : Ligue des champions féminine EHF (beIN SPOR
@@ -2619,7 +2419,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:230489fd68eaa18a3406a0c46a3004c594930bca@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T094100Z
 DTEND:20261117T112700Z
 SUMMARY:Formule 1 · Formule 1 : Grand Prix du Brésil (Canal+ Sport)
@@ -2634,7 +2434,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:602e4e13e0daa1f17303c454c5f70e48c98b2d61@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T110000Z
 DTEND:20261117T130000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2652,7 +2452,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:32c912eb48cf6fcafa65d103960c867c41a6fc92@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T115000Z
 DTEND:20261117T140000Z
 SUMMARY:Basket-ball · Basket-ball : Qualifications à l'EuroBasket fémini
@@ -2668,7 +2468,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:2c9fc82772d99af8f2a6e3f27d97fb5193a84d21@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T120000Z
 DTEND:20261117T150000Z
 SUMMARY:MMA · Jiu-jitsu brésilien : UFC BJJ (RMC Sport 1)
@@ -2683,7 +2483,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:112190691ba4fdecab4ee67a353af1617be83f38@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T123000Z
 DTEND:20261117T141500Z
 SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 1)
@@ -2699,7 +2499,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:b12a19067fa1e11a5f7caa1cf9e69ade00e5ec16@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T145200Z
 DTEND:20261117T153500Z
 SUMMARY:Football · Décrypté (Canal+ Foot)
@@ -2713,7 +2513,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d81a5ceb97100b39796e06f5a1766937fe719dd2@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T153300Z
 DTEND:20261117T163200Z
 SUMMARY:MotoGP · Moto 2 : Grand Prix du Qatar (Canal+ Sport 360)
@@ -2728,7 +2528,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:4ce180e6198f08abc8e07352e079c98bba729ed4@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T160000Z
 DTEND:20261117T180000Z
 SUMMARY:Basket-ball · Dubai Basketball / Anadolu Efes Istanbul (EuroLeague
@@ -2743,7 +2543,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:8a9f54ff1861caadcbeb19a9df62d2db1187c65c@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T163000Z
 DTEND:20261117T183000Z
 SUMMARY:Basket-ball · Turk Telekom Ankara / La Laguna Tenerife (EuroLeague
@@ -2758,7 +2558,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d0458b2273f565636e27b383f0278fc8bbd93f3a@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T170000Z
 DTEND:20261117T190000Z
 SUMMARY:Basket-ball · Maccabi Rapyd Tel Aviv / Olympiacos Piraeus (EuroLea
@@ -2773,7 +2573,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:59f160f1779b8e894a372a3bef41f8c4e3f05bbc@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T170000Z
 DTEND:20261117T190000Z
 SUMMARY:Basket-ball · Balkan Botevgrad / ratiopharm ulm (EuroLeague TV)
@@ -2787,7 +2587,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:285ebe1f4c8fa2396b03c28c4875bd446689bd66@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T173000Z
 DTEND:20261117T194500Z
 SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 3)
@@ -2803,7 +2603,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:35c3b23812a071d7b9c23c08d1ba6095a52ecc7f@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T180000Z
 DTEND:20261117T200000Z
 SUMMARY:Basket-ball · Fenerbahce Tarfin Istanbul / LDLC ASVEL Villeurbanne
@@ -2818,7 +2618,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:00464b8770f2061d422fe6b08cccb7b221ec7e65@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T180000Z
 DTEND:20261117T200000Z
 SUMMARY:Basket-ball · Zalgiris Kaunas / FC Bayern Munich (EuroLeague TV)
@@ -2832,7 +2632,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:64e01feb5c628d19a72d2255a0788b43688999c1@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T190000Z
 DTEND:20261117T210000Z
 SUMMARY:Basket-ball · Roma Basketball / Bahcesehir College Istanbul (EuroL
@@ -2847,7 +2647,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:09ceb7df33bbbfe0874143e801576363d7cb26ed@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T190000Z
 DTEND:20261117T210000Z
 SUMMARY:Basket-ball · Rostock Seawolves / Hapoel Midtown Jerusalem (EuroLe
@@ -2862,7 +2662,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:0d2181dc3a1f0f7342b78f89e8ba42385c9b87c1@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T190000Z
 DTEND:20261117T210000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -2880,7 +2680,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c87ea33a2edef9c6ad6348e3cfeb5a46c9ed9fba@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T193000Z
 DTEND:20261117T213000Z
 SUMMARY:Basket-ball · FC Barcelona / Paris Basketball (EuroLeague TV)
@@ -2894,7 +2694,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:317346aab0eec38cbc6c293ecc574d2e5e3943de@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T193000Z
 DTEND:20261117T213000Z
 SUMMARY:Basket-ball · Armani Olimpia Milan / Crvena Zvezda Meridianbet Bel
@@ -2909,7 +2709,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d99000bd417fa31f45ae3cd9ebb2012335c201a3@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T193000Z
 DTEND:20261117T213000Z
 SUMMARY:Basket-ball · Kosner Baskonia Vitoria-Gasteiz / Hapoel IBI Tel Avi
@@ -2924,7 +2724,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:1594815618c6e6252adcf9e06b1ce99f3eb61c8c@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T193000Z
 DTEND:20261117T213000Z
 SUMMARY:Basket-ball · London Lions / Siauliai Basketball (EuroLeague TV)
@@ -2938,7 +2738,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:24ffa92429199ec6e8b11017971a655aafbbcb1e@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T194500Z
 DTEND:20261117T214500Z
 SUMMARY:Basket-ball · Partizan Mozzart Bet Belgrade / Valencia Basket (Eur
@@ -2953,7 +2753,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:992a3729619aca5e3a0a19a93d78d8109002daf4@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T194500Z
 DTEND:20261117T214500Z
 SUMMARY:Basket-ball · Basket-ball : NBA (beIN SPORTS 3)
@@ -2968,7 +2768,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c0e78d7f529703814f3a467820ff11fa552fddab@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T200000Z
 DTEND:20261117T220000Z
 SUMMARY:Basket-ball · Virtus Bologna / Panathinaikos AKTOR Athens (EuroLea
@@ -2983,7 +2783,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:13308eae137e3a4874c0cb7be9533680656ce027@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T200000Z
 DTEND:20261117T230000Z
 SUMMARY:MMA · MMA : Hexagone (RMC Sport 1)
@@ -2997,7 +2797,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:a89737382283b7e9c44686604da05142d9521336@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261117T210000Z
 DTEND:20261117T230000Z
 SUMMARY:Football · Football (beIN SPORTS 2)
@@ -3014,8 +2814,204 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:0911d2cd36c7455a8589e69b1bd10d0fa907953f@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T005500Z
+DTEND:20261118T050000Z
+SUMMARY:Basket-ball · Minnesota Timberwolves / Portland Trail Blazers (DAZ
+ N 1)
+DESCRIPTION:Basket-ball. NBA Saison régulière. — Diffusion d'un match d
+ e NBA (National Basketball Association)\, la ligue américaine de basketba
+ ll. Depuis 1946\, les parquets américains et canadiens voient s'affronter
+  des franchises de légende comme les Lakers\, les Bulls\, les Celtics ou 
+ bien encore les Spurs. Des joueurs NBA sont
+LOCATION:DAZN 1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5f72b7e7b9e5f32aed0ddc86664a92644db207e3@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T005500Z
+DTEND:20261118T050000Z
+SUMMARY:Basket-ball · San Antonio Spurs / Detroit Pistons (DAZN 2)
+DESCRIPTION:Basket-ball. NBA Saison régulière. — Diffusion d'un match d
+ e NBA (National Basketball Association)\, la ligue américaine de basketba
+ ll. Depuis 1946\, les parquets américains et canadiens voient s'affronter
+  des franchises de légende comme les Lakers\, les Bulls\, les Celtics ou 
+ bien encore les Spurs. Des joueurs NBA sont
+LOCATION:DAZN 2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:80945763971e2f984bd5c69a330843b89978ac5a@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T010000Z
+DTEND:20261118T034500Z
+SUMMARY:Basket-ball · Basket-ball : NBA (beIN SPORTS 1)
+DESCRIPTION:San Antonio Spurs / Detroit Pistons. NBA. Saison régulière.
+LOCATION:beIN SPORTS 1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6ce8485daccb83e5ebcd07d9d319ac956440fed8@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T023000Z
+DTEND:20261118T043000Z
+SUMMARY:Basket-ball · Basket-ball : NCAA (beIN SPORTS MAX 6)
+DESCRIPTION:Kansas / UNLV. NCAA. Saison régulière.
+LOCATION:beIN SPORTS MAX 6
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dc3b3428b7865cc07d037f86965f939f5688697b@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T040000Z
+DTEND:20261118T064500Z
+SUMMARY:Basket-ball · Basket-ball : NBA (beIN SPORTS 1)
+DESCRIPTION:Los Angeles Clippers / Utah Jazz. NBA. Saison régulière.
+LOCATION:beIN SPORTS 1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6ce627747ede3e050dd7e148d1e2a8a13583145b@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T061700Z
+DTEND:20261118T080000Z
+SUMMARY:Rugby · Rugby : Top 14 (Canal+ Sport)
+DESCRIPTION:9e journée : Toulouse / Clermont-Auvergne — Sèchement battu
+  à Pau (34-14) lors de la huitième journée\, le Stade Toulousain se doi
+ t de réagir à l'occasion de la réception de Clermont. Suite à ce rever
+ s\, Antoine Dupont et ses équipiers avaient vu Bègles-Bordeaux ne reveni
+ r qu'à un point en tête du championnat\, et il ne faudr
+LOCATION:Canal+ Sport
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cde08c7534580680118f249f99e086e534aec0d9@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T070000Z
+DTEND:20261118T073100Z
+SUMMARY:Formule 1 · Lundi Grand Prix (Canal+ Sport 360)
+DESCRIPTION:Lundi Grand Prix revient en détails sur le GP de F1 disputé l
+ e weekend précédent et livre toute ses analyses\, en se projetant aussi 
+ sur la prochaine manche à venir. Toutes les informations en provenance de
+ s différentes écuries\, autant sur les machines que sur les pilotes\, so
+ nt ab
+LOCATION:Canal+ Sport 360
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:45a119a7207c10ab4b2d7b9db1d827bb7c2c6c5c@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T070000Z
+DTEND:20261118T083000Z
+SUMMARY:Handball · Handball : Daikin StarLigue (beIN SPORTS 3)
+DESCRIPTION:Nantes / Saint-Raphaël. Daikin StarLigue. 10e journée.
+LOCATION:beIN SPORTS 3
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8dd22cb135f4f674c9f0c761526cefa5fe058012@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T080000Z
+DTEND:20261118T094400Z
+SUMMARY:Rugby · Rugby : Top 14 (Canal+ Sport)
+DESCRIPTION:9e journée : Pau / Perpignan — Après avoir fait chuter le l
+ eader Toulouse (34-14) lors de la huitième journée\, Pau entend bien pou
+ rsuivre sur la même dynamique en recevant Perpignan. A l'inverse\, les Ca
+ talans sortent d'une défaite douloureuse à domicile face à Toulon (24-2
+ 5) qui les a mis dans une mauvaise pos
+LOCATION:Canal+ Sport
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:15afd755af1ba27053ee371907e2f11c8da88ccf@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T094400Z
+DTEND:20261118T101600Z
+SUMMARY:Rugby · Canal Rugby Club (Canal+ Sport)
+DESCRIPTION:Le magazine met à l'honneur le Top 14 dont les rencontres sont
+  proposées en exclusivité et en intégralité sur les chaînes Canal+. L
+ 'émission propose encore plus d'immersion en direct des terrains chaque w
+ eek-end et plus de reportages inside et d'interviews de personnalités du 
+ rug
+LOCATION:Canal+ Sport
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bf125a1bf001b22ea07a10b849986880698af173@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T150000Z
+DTEND:20261118T164500Z
+SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 1)
+DESCRIPTION:FC Barcelone / Paris Basketball. Euroligue masculine. 12e journ
+ ée.
+LOCATION:beIN SPORTS 1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2c39445479f646acc24925360d6d2f05c610b8a3@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T153300Z
+DTEND:20261118T163200Z
+SUMMARY:MotoGP · Moto 2 : Grand Prix du Qatar (Canal+ Sport 360)
+DESCRIPTION:La course des Moto 2 — Direction le Circuit international de 
+ Lusail\, situé non loin de Doha\, pour suivre la course du Grand Prix du 
+ Qatar de moto2.
+LOCATION:Canal+ Sport 360
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:b0bfe31b3955dd26a6a560b570117c813852539e@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261118T163000Z
 DTEND:20261118T183000Z
 SUMMARY:Basket-ball · Baglietto Derthona Tortona / Riga Zelli (EuroLeague 
@@ -3030,7 +3026,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:568b881e654fabfa965195311bd72bc40f79222a@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261118T170000Z
 DTEND:20261118T190000Z
 SUMMARY:Basket-ball · Besiktas Istanbul / Real Madrid (EuroLeague TV)
@@ -3044,7 +3040,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e453d98a0fe4e16472aaed3d7cf4aec4bc6d0e38@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261118T170000Z
 DTEND:20261118T190000Z
 SUMMARY:Basket-ball · U-BT Cluj-Napoca / Maxima Roma (EuroLeague TV)
@@ -3057,8 +3053,22 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:9fd8c588e9aa9e4fac2ea5d2c7fd5931f255557b@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T170000Z
+DTEND:20261118T190000Z
+SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 1)
+DESCRIPTION:Besiktas / Real Madrid. Euroligue masculine. 12e journée.
+LOCATION:beIN SPORTS 1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:9898bd60abc0819b3bafdab3f0b830d9f6e11a65@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261118T173000Z
 DTEND:20261118T193000Z
 SUMMARY:Basket-ball · Cedevita Olimpija Ljubljana / Recoletas Salud San Pa
@@ -3072,8 +3082,41 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:894c848a5c5e826adaf33f15490c63d0290c0d36@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T174000Z
+DTEND:20261118T194000Z
+SUMMARY:Football · Aek Athènes / Real Madrid (Canal+ Live 2)
+DESCRIPTION:Football. Ligue des champions. 4e journée. — Ligue des champ
+ ions. 4e journée. AEK Athènes / Real Madrid.
+LOCATION:Canal+ Live 2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:43fa693a8144b5dcf241eac33ef018c2e7734650@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T174700Z
+DTEND:20261118T193800Z
+SUMMARY:Formule 1 · Formule 1 : Grand Prix du Brésil (Canal+ Sport)
+DESCRIPTION:La course — Titré au Mexique\, Kimi Antonelli (Mercedes) acc
+ rochera-t-il le Grand Prix du Brésil à son palmarès\, pour sa deuxième
+  participation à l'épreuve ? Derrière le nouveau champion du monde\, la
+  lutte fait rage pour la deuxième place du classement. Vainqueur au Mexiq
+ ue une semaine plus t
+LOCATION:Canal+ Sport
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:c920fde55402ec9d4157b63766b786b818f50c53@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261118T180000Z
 DTEND:20261118T200000Z
 SUMMARY:Basket-ball · NINERS Chemnitz / Tofas Bursa (EuroLeague TV)
@@ -3087,7 +3130,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:f33e1774d48c470929cf122c60ec4bc9adf660d6@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261118T180000Z
 DTEND:20261118T200000Z
 SUMMARY:Basket-ball · Buducnost VOLI Podgorica / Slask Wroclaw (EuroLeague
@@ -3102,7 +3145,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:1b962ebf0ad8e17800f1d18c49fe5c9e6babe61d@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261118T180000Z
 DTEND:20261118T200000Z
 SUMMARY:Basket-ball · Aris Thessaloniki / Le Mans Sarthe Basket (EuroLeagu
@@ -3117,7 +3160,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ebae2dc44e82b8d929594aa98f83812cb6660ede@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261118T183000Z
 DTEND:20261118T203000Z
 SUMMARY:Basket-ball · BOSNA BH Telecom Sarajevo / Lietkabelis Panevezys (E
@@ -3132,7 +3175,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:79e1c662510d48fcd7862cf671ee7101cc7ef9ea@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261118T183000Z
 DTEND:20261118T203000Z
 SUMMARY:Basket-ball · Cosea JL Bourg-en-Bresse / Napoli Basketball (EuroLe
@@ -3147,7 +3190,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:13bce670bfb0bc1ece6e2484c2c27b83e77ef4e7@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261118T183000Z
 DTEND:20261118T203000Z
 SUMMARY:Basket-ball · Skyliners Frankfurt / Umana Reyer Venice (EuroLeague
@@ -3162,7 +3205,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:7cbb3ba4ef7ce4d756b910932df229e77b1f84b3@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261118T190000Z
 DTEND:20261118T210000Z
 SUMMARY:Basket-ball · Dolomiti Energia Trento / Neptunas Klaipeda (EuroLea
@@ -3176,8 +3219,22 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:a8b7861e0157045c33ea6710eeb522b5444d5f12@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T190000Z
+DTEND:20261118T204500Z
+SUMMARY:Handball · Handball : Ligue Butagaz Energie (beIN SPORTS 3)
+DESCRIPTION:Toulon / Besançon. Ligue Butagaz Energie. 10e journée.
+LOCATION:beIN SPORTS 3
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:da0419fe7f0f5960c2a6618e5d3e1e6166f6002e@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261118T193000Z
 DTEND:20261118T213000Z
 SUMMARY:Basket-ball · Kids&Us Manresa / PAOK Thessaloniki (EuroLeague TV)
@@ -3190,8 +3247,40 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:15b36b09e5107c86a21f269e3904d1b1aa77f38a@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T195500Z
+DTEND:20261118T215500Z
+SUMMARY:Football · Leipzig / Manchester City (Canal+ Live 2)
+DESCRIPTION:Football. Ligue des champions. 4e journée.
+LOCATION:Canal+ Live 2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3ca261a02fd5822217e07bb29eb06ab7ce4b0095@programme-tv-sport
+DTSTAMP:20261110T024349Z
+DTSTART:20261118T200000Z
+DTEND:20261118T230000Z
+SUMMARY:MMA · MMA : Hexagone (RMC Sport 1)
+DESCRIPTION:Hexagone MMA 48 se déroule le 24 octobre 2026 au Zénith Paris
+  La Villette. Le gala parisien met en vedette deux Français\, le vice-cha
+ mpion du monde Samba Sima face à Leopold "Leonidas" Goi\, pour la ceintur
+ e des poids mouches (-57 kg). Avec également une carte composée de plusi
+ eur
+LOCATION:RMC Sport 1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:9be57dd1659bc3fdf813df8a33f5654191c32bcf@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261119T171500Z
 DTEND:20261119T191500Z
 SUMMARY:Basket-ball · Maccabi Rapyd Tel Aviv / Dubai Basketball (EuroLeagu
@@ -3206,7 +3295,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dae9e66f82348ccd7b27d06dce8754e1261670fb@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261119T180000Z
 DTEND:20261119T200000Z
 SUMMARY:Basket-ball · Zalgiris Kaunas / Panathinaikos AKTOR Athens (EuroLe
@@ -3221,7 +3310,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ee5c3d559172c14f99d678d6c1dbb7050d1ca426@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261119T190000Z
 DTEND:20261119T210000Z
 SUMMARY:Basket-ball · FC Bayern Munich / Kosner Baskonia Vitoria-Gasteiz (
@@ -3236,7 +3325,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:6c59c6e66457fe0b2ff2f0bd30770833c7f7fd51@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261119T193000Z
 DTEND:20261119T213000Z
 SUMMARY:Basket-ball · Armani Olimpia Milan / Fenerbahce Tarfin Istanbul (E
@@ -3251,7 +3340,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:9d0a9921cebcf00ade797f0f4bcb3d45bc7ed9a6@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261119T194500Z
 DTEND:20261119T214500Z
 SUMMARY:Basket-ball · Paris Basketball / Hapoel IBI Tel Aviv (EuroLeague T
@@ -3266,7 +3355,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e676bb40ed3c17959aba6d8c95b6fda19721ff90@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261119T200000Z
 DTEND:20261119T220000Z
 SUMMARY:Basket-ball · Valencia Basket / Virtus Bologna (EuroLeague TV)
@@ -3280,7 +3369,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:b29fd494c058c5e03f7e7f5ecf2de042e0f0aa5d@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261120T173000Z
 DTEND:20261120T193000Z
 SUMMARY:Basket-ball · Anadolu Efes Istanbul / LDLC ASVEL Villeurbanne (Eur
@@ -3295,7 +3384,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c5e73ae4ef5dd9e23ef76d3eb08fa82e1a0d1030@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261120T191500Z
 DTEND:20261120T211500Z
 SUMMARY:Basket-ball · Olympiacos Piraeus / Real Madrid (EuroLeague TV)
@@ -3309,7 +3398,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c88425535c860f7eb4d40c31aba8c25cf1da2875@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261120T193000Z
 DTEND:20261120T213000Z
 SUMMARY:Basket-ball · FC Barcelona / Crvena Zvezda Meridianbet Belgrade (E
@@ -3324,7 +3413,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:f7d34de4c1cf1080bd152209fd38f052862d1bb2@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261120T194500Z
 DTEND:20261120T214500Z
 SUMMARY:Basket-ball · Partizan Mozzart Bet Belgrade / Besiktas Istanbul (E
@@ -3339,7 +3428,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ca55d66b7a5869c9b2dbe33f29891a3b395d0d32@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261124T170000Z
 DTEND:20261124T190000Z
 SUMMARY:Basket-ball · Besiktas Istanbul / Paris Basketball (EuroLeague TV)
@@ -3353,7 +3442,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e5e2e1d1f943d044ca64da0397d40c3e26db61c6@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261124T180000Z
 DTEND:20261124T200000Z
 SUMMARY:Basket-ball · Crvena Zvezda Meridianbet Belgrade / Virtus Bologna 
@@ -3368,7 +3457,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:7fe99d16e04a30e30b0759a0e54a2303ff34ad83@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261124T190000Z
 DTEND:20261124T210000Z
 SUMMARY:Basket-ball · FC Bayern Munich / Maccabi Rapyd Tel Aviv (EuroLeagu
@@ -3383,7 +3472,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:fbe3acab3e4b64ac28589a5f2b8a8e8bb2452697@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261124T193000Z
 DTEND:20261124T213000Z
 SUMMARY:Basket-ball · Valencia Basket / Panathinaikos AKTOR Athens (EuroLe
@@ -3398,7 +3487,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:479192005b6f873f8c0b6f51963e1015122e232c@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261124T194500Z
 DTEND:20261124T214500Z
 SUMMARY:Basket-ball · LDLC ASVEL Villeurbanne / Armani Olimpia Milan (Euro
@@ -3413,7 +3502,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:89ee0ba71785268ca55cb67dee31b8f818ae2685@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261124T200000Z
 DTEND:20261124T220000Z
 SUMMARY:Basket-ball · FC Barcelona / Fenerbahce Tarfin Istanbul (EuroLeagu
@@ -3428,7 +3517,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:33ea674f4ea3ff35f942aac9162eebf4f456a61d@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261125T160000Z
 DTEND:20261125T180000Z
 SUMMARY:Basket-ball · Dubai Basketball / Partizan Mozzart Bet Belgrade (Eu
@@ -3443,7 +3532,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e512c98b0f2ad044e97942c0e3e380f284f0127e@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261125T191500Z
 DTEND:20261125T211500Z
 SUMMARY:Basket-ball · Olympiacos Piraeus / Hapoel IBI Tel Aviv (EuroLeague
@@ -3458,7 +3547,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:8530b335be32cb0af0954fe6d5ab2222247e68a3@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261125T193000Z
 DTEND:20261125T213000Z
 SUMMARY:Basket-ball · Kosner Baskonia Vitoria-Gasteiz / Anadolu Efes Istan
@@ -3473,7 +3562,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:9b80c9421859ae7707ec02b2352dea6ce684d7c0@programme-tv-sport
-DTSTAMP:20261109T184732Z
+DTSTAMP:20261110T024349Z
 DTSTART:20261125T194500Z
 DTEND:20261125T214500Z
 SUMMARY:Basket-ball · Real Madrid / Zalgiris Kaunas (EuroLeague TV)
