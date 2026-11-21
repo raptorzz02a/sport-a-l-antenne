@@ -7,26 +7,10 @@ X-WR-TIMEZONE:Europe/Paris
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
-UID:3bdf1bac3d3279872bf81cacd8f7a40605db0bfe@programme-tv-sport
-DTSTAMP:20261121T013005Z
-DTSTART:20261120T173000Z
-DTEND:20261120T193000Z
-SUMMARY:Basket-ball · Basket-ball : Euroligue masculine | Anadolu Efes Ist
- anbul / ASVEL Lyon-Villeurbanne (beIN SPORTS 3)
-DESCRIPTION:A suivre des matchs de la prestigieuse EuroLigue de basket-ball
- \, officiellement appelée EuroLeague.
-LOCATION:beIN SPORTS 3
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:a749ddc8068e5b098b7d3cbd45d3df014dbabb21@programme-tv-sport
-DTSTAMP:20261121T013005Z
-DTSTART:20261121T130000Z
-DTEND:20261121T150000Z
+UID:720a4c7c49644765e3bda791d669900af918be69@programme-tv-sport
+DTSTAMP:20261121T123718Z
+DTSTART:20261123T193000Z
+DTEND:20261123T214500Z
 SUMMARY:Football · Football : Ligue 2 BKT | Nantes / Grenoble (beIN SPORTS
   1)
 DESCRIPTION:Retransmission d'une rencontre disputée dans le cadre de la Li
@@ -40,40 +24,8 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:2057f04dbe12e59af19a534c163f08e80777ee96@programme-tv-sport
-DTSTAMP:20261121T013005Z
-DTSTART:20261123T233400Z
-DTEND:20261124T010700Z
-SUMMARY:Football · Champions League Weekly (Canal+ Foot)
-DESCRIPTION:Les dernières actualités\, résultats et critiques des matchs
-  de Ligue des Champions\, avec des interviews d'experts et de stars du foo
- tball\, condensées en images.
-LOCATION:Canal+ Foot
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:0a7a89e90f9f67c5968ac45f632e135532e1f106@programme-tv-sport
-DTSTAMP:20261121T013005Z
-DTSTART:20261124T083000Z
-DTEND:20261124T101500Z
-SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 3)
-DESCRIPTION:Anadolu Efes Istanbul / ASVEL Lyon-Villeurbanne. Euroligue masc
- uline. 13e journée. — Euroligue masculine. 13e journée. Anadolu Efes I
- stanbul / ASVEL Lyon-Villeurbanne.
-LOCATION:beIN SPORTS 3
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT15M
-DESCRIPTION:Bientôt à la TV
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:9d7c24f3252db97b1562ca014873d50188f80c1b@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T170000Z
 DTEND:20261124T190000Z
 SUMMARY:Basket-ball · Besiktas Fuzul Istanbul / Paris Basketball (EuroLeag
@@ -87,12 +39,14 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:d9ce03d0f3abc487257360472ec2f8f06c2f1dec@programme-tv-sport
-DTSTAMP:20261121T013005Z
+UID:a217fb6a8cf960c9282378b2644e28bb6545ad0f@programme-tv-sport
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T170000Z
 DTEND:20261124T190000Z
-SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 1)
-DESCRIPTION:Besiktas / Paris Basketball. Euroligue masculine. 14e journée.
+SUMMARY:Basket-ball · Basket-ball : Euroligue masculine | Besiktas / Paris
+  Basketball (beIN SPORTS 1)
+DESCRIPTION:A suivre des matchs de la prestigieuse EuroLigue de basket-ball
+ \, officiellement appelée EuroLeague.
 LOCATION:beIN SPORTS 1
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -101,13 +55,35 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:7470d4ddbea44872e73b3c2592265da972eee12b@programme-tv-sport
-DTSTAMP:20261121T013005Z
+UID:d1d95141ddb03f9efc1366a31843dd08629c77f0@programme-tv-sport
+DTSTAMP:20261121T123718Z
+DTSTART:20261124T174000Z
+DTEND:20261124T194500Z
+SUMMARY:Football · Football : Ligue des champions | Galatasaray / Aston Vi
+ lla (Canal+ Foot)
+DESCRIPTION:Sur CANAL+\, les meilleurs consultants analysent les matchs ave
+ c brio. Cette saison on retrouve Laure Boulleau\, Samir Nasri\, Olivier Da
+ court\, Sidney Govou\, Aline Riera\, Christophe Jallet et beaucoup d'autre
+ s. Ils sont accompagnés par les meilleurs journalistes et commentateurs p
+ ar
+LOCATION:Canal+ Foot
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8c7e51299aeb1ded609b18ae6eb406a513d1d0be@programme-tv-sport
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T174000Z
 DTEND:20261124T194000Z
-SUMMARY:Football · Football : Ligue des champions (Canal+ Live 1)
-DESCRIPTION:Football. Ligue des champions. 5e journée. — Ligue des champ
- ions. 5e journée.
+SUMMARY:Football · Galatasaray / Aston Villa (Canal+ Live 1)
+DESCRIPTION:Ligue des champions - 5e journée — A découvrir les plus bel
+ les affiches de la prestigieuse Ligue des Champions\, compétition europé
+ enne de football organisée par l'UEFA. C'est la compétition de clubs la 
+ plus célèbre dans le monde\, fondée en 1955. Désormais ce sont 36 équ
+ ipes\, réparties dans une poule unique\, qui se
 LOCATION:Canal+ Live 1
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -117,12 +93,13 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:8925a874852df938e8a7463494d7f0f58d956918@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T174500Z
 DTEND:20261124T194500Z
 SUMMARY:Football · Bodø/Glimt / LASK Linz (Canal+ Live 2)
-DESCRIPTION:Football. Ligue des champions. 5e journée. — Ligue des champ
- ions. 5e journée. Bodø/Glimt / LASK Linz.
+DESCRIPTION:Ligue des champions - 5e journée — Pour Bodo/Glimt\, une vic
+ toire est quasiment indispensable ce soir pour espérer poursuivre l'avent
+ ure dans la compétition.
 LOCATION:Canal+ Live 2
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -131,8 +108,24 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:28551e9239bc42d6fd1f0277be879aa215ea95cf@programme-tv-sport
+DTSTAMP:20261121T123718Z
+DTSTART:20261124T174500Z
+DTEND:20261124T195000Z
+SUMMARY:Football · Football : Ligue des champions | Bodø/Glimt / LASK Lin
+ z (Canal+ Sport)
+DESCRIPTION:Pour Bodo/Glimt\, une victoire est quasiment indispensable ce s
+ oir pour espérer poursuivre l'aventure dans la compétition.
+LOCATION:Canal+ Sport
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:e5e2e1d1f943d044ca64da0397d40c3e26db61c6@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T180000Z
 DTEND:20261124T200000Z
 SUMMARY:Basket-ball · Crvena Zvezda Meridianbet Belgrade / Virtus Bologna 
@@ -147,7 +140,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:7fe99d16e04a30e30b0759a0e54a2303ff34ad83@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T190000Z
 DTEND:20261124T210000Z
 SUMMARY:Basket-ball · FC Bayern Munich / Maccabi Rapyd Tel Aviv (EuroLeagu
@@ -162,7 +155,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:fbe3acab3e4b64ac28589a5f2b8a8e8bb2452697@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T193000Z
 DTEND:20261124T213000Z
 SUMMARY:Basket-ball · Valencia Basket / Panathinaikos AKTOR Athens (EuroLe
@@ -177,7 +170,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:479192005b6f873f8c0b6f51963e1015122e232c@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T194500Z
 DTEND:20261124T214500Z
 SUMMARY:Basket-ball · LDLC ASVEL Villeurbanne / Armani Olimpia Milan (Euro
@@ -191,14 +184,17 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:89be0ac8e0ed097fb10470fdf3e90c316718f38e@programme-tv-sport
-DTSTAMP:20261121T013005Z
+UID:1cf22723bc29a6f81920c9bc47f4adc087767d3a@programme-tv-sport
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T194500Z
 DTEND:20261124T214500Z
-SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 1)
-DESCRIPTION:ASVEL Lyon-Villeurbanne / Olimpia Milan. Euroligue masculine. 1
- 4e journée. — Euroligue masculine. 14e journée. ASVEL Lyon-Villeurbann
- e / Olimpia Milan.
+SUMMARY:Basket-ball · Basket-ball : Euroligue masculine | ASVEL Lyon-Ville
+ urbanne / Olimpia Milan (beIN SPORTS 1)
+DESCRIPTION:L'ASVEL de Tony Parker reçoit l'une des plus mauvaises équipe
+ s de ce début de saison de l'Euroligue\, l'Olimpia Milan. Les noirs et bl
+ ancs fondent beaucoup d'espoirs sur l'expérimenté Patty Mills pour les a
+ ider à battre un adversaire qui arrive en France avec l'espoir de se rela
+ nc
 LOCATION:beIN SPORTS 1
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -208,12 +204,15 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:fee48662999c3a7763baad63c297351ab3fb776a@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T195500Z
 DTEND:20261124T215500Z
 SUMMARY:Football · Manchester City / Naples (Canal+ Live 3)
-DESCRIPTION:Football. Ligue des champions. 5e journée. — Ligue des champ
- ions. 5e journée. Manchester City / Naples.
+DESCRIPTION:Ligue des champions - 5e journée — A découvrir les plus bel
+ les affiches de la prestigieuse Ligue des Champions\, compétition europé
+ enne de football organisée par l'UEFA. C'est la compétition de clubs la 
+ plus célèbre dans le monde\, fondée en 1955. Désormais ce sont 36 équ
+ ipes\, réparties dans une poule unique\, qui se
 LOCATION:Canal+ Live 3
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -223,7 +222,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:376e3d94f08370a72f052ff1f508cd267baf22f4@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T195500Z
 DTEND:20261124T215500Z
 SUMMARY:Football · Arsenal / Borussia Dortmund (Canal+ Live 4)
@@ -239,7 +238,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:582c6e6b32162f4b946a8a21397a7d6d995e5a4d@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T195500Z
 DTEND:20261124T215500Z
 SUMMARY:Football · Feyenoord Rotterdam / FC Porto (Canal+ Live 5)
@@ -257,7 +256,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:8f6fcf0d435f31ca106d43f1a7cc77463230a69c@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T195500Z
 DTEND:20261124T215500Z
 SUMMARY:Football · Côme / AEK Athènes (Canal+ Live 6)
@@ -275,7 +274,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:b0a27506bcb6cb85cacd0a4697a3a378fa45b54f@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T195500Z
 DTEND:20261124T215500Z
 SUMMARY:Football · Slovan Bratislava / Betis Séville (Canal+ Live 7)
@@ -292,14 +291,91 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:e6880658257add515f36739372e8315b8f57cbb3@programme-tv-sport
-DTSTAMP:20261121T013005Z
+UID:10558e7391d919969024d2654ead43dc283718c9@programme-tv-sport
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T195800Z
-DTEND:20261124T220000Z
-SUMMARY:Football · La grande soirée Ligue des Champions (La chaine l’É
- quipe)
-DESCRIPTION:Leipzig - Lens
-LOCATION:La chaine l’Équipe
+DTEND:20261124T215800Z
+SUMMARY:Football · Real Madrid / PSV Eindhoven (Canal+ Live 2)
+DESCRIPTION:Ligue des champions - 5e journée — A découvrir les plus bel
+ les affiches de la prestigieuse Ligue des Champions\, compétition europé
+ enne de football organisée par l'UEFA. C'est la compétition de clubs la 
+ plus célèbre dans le monde\, fondée en 1955. Désormais ce sont 36 équ
+ ipes\, réparties dans une poule unique\, qui se
+LOCATION:Canal+ Live 2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2f4e69533737f81911677d08d127a61cb8eec1bd@programme-tv-sport
+DTSTAMP:20261121T123718Z
+DTSTART:20261124T200000Z
+DTEND:20261124T220200Z
+SUMMARY:Football · Football : Ligue des champions | Leipzig / Lens (Canal+
+  Foot)
+DESCRIPTION:Sur CANAL+\, les meilleurs consultants analysent les matchs ave
+ c brio. Cette saison on retrouve Laure Boulleau\, Samir Nasri\, Olivier Da
+ court\, Sidney Govou\, Aline Riera\, Christophe Jallet et beaucoup d'autre
+ s. Ils sont accompagnés par les meilleurs journalistes et commentateurs p
+ ar
+LOCATION:Canal+ Foot
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:29939939e84f726f3731ef38feb466ec344ddbb3@programme-tv-sport
+DTSTAMP:20261121T123718Z
+DTSTART:20261124T200000Z
+DTEND:20261124T215600Z
+SUMMARY:Football · Leipzig / Lens (Canal+ Live 1)
+DESCRIPTION:Ligue des champions - 5e journée — C'est un déplacement pé
+ rilleux qui s'annonce ce soir pour les Lensois\, encore secoués par leur 
+ déroute historique à domicile (1-9) face à Côme lors de la quatrième 
+ journée.
+LOCATION:Canal+ Live 1
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:70e505316aa0244d233225f4719b0e995e3d9549@programme-tv-sport
+DTSTAMP:20261121T123718Z
+DTSTART:20261124T200000Z
+DTEND:20261124T220100Z
+SUMMARY:Football · Football : Ligue des champions | Real Madrid / PSV Eind
+ hoven (Canal+ Sport)
+DESCRIPTION:Sur CANAL+\, les meilleurs consultants analysent les matchs ave
+ c brio. Cette saison on retrouve Laure Boulleau\, Samir Nasri\, Olivier Da
+ court\, Sidney Govou\, Aline Riera\, Christophe Jallet et beaucoup d'autre
+ s. Ils sont accompagnés par les meilleurs journalistes et commentateurs p
+ ar
+LOCATION:Canal+ Sport
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:430d8cbc5534662fe07fc13ce1343a7c857e18f2@programme-tv-sport
+DTSTAMP:20261121T123718Z
+DTSTART:20261124T200000Z
+DTEND:20261124T220200Z
+SUMMARY:Football · Football : Ligue des champions | Multiplex (Canal+ Spor
+ t 360)
+DESCRIPTION:La cinquième journée s'ouvre ce soir avec notamment la rencon
+ tre opposant le RC Lens\, qui se déplace sur le terrain du RB Leipzig. Le
+ s Sangs et Or tenteront de sauver l'honneur après leur déroute historiqu
+ e à domicile (1-9) face à Côme. Egalement au programme de la soirée : 
+ Bodö 
+LOCATION:Canal+ Sport 360
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT15M
@@ -308,7 +384,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:89ee0ba71785268ca55cb67dee31b8f818ae2685@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261124T200000Z
 DTEND:20261124T220000Z
 SUMMARY:Basket-ball · FC Barcelona / Fenerbahce Tarfin Istanbul (EuroLeagu
@@ -322,8 +398,40 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:f3aa15506bdec6381ccba327b4191bc76ae27f65@programme-tv-sport
+DTSTAMP:20261121T123718Z
+DTSTART:20261125T113800Z
+DTEND:20261125T120500Z
+SUMMARY:Football · Champions League Weekly (Canal+ Foot)
+DESCRIPTION:Les dernières actualités\, résultats et critiques des matchs
+  de Ligue des Champions\, avec des interviews d'experts et de stars du foo
+ tball\, condensées en images.
+LOCATION:Canal+ Foot
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1d7eb500b5fd89717fc0fbb869246e8e69b74d98@programme-tv-sport
+DTSTAMP:20261121T123718Z
+DTSTART:20261125T131500Z
+DTEND:20261125T150000Z
+SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 3)
+DESCRIPTION:ASVEL Lyon-Villeurbanne / Olimpia Milan. Euroligue masculine. 1
+ 4e journée. — Euroligue masculine. 14e journée. ASVEL Lyon-Villeurbann
+ e / Olimpia Milan.
+LOCATION:beIN SPORTS 3
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:33ea674f4ea3ff35f942aac9162eebf4f456a61d@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T160000Z
 DTEND:20261125T180000Z
 SUMMARY:Basket-ball · Dubai Basketball / Partizan Mozzart Bet Belgrade (Eu
@@ -338,7 +446,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:97474d08972dd8d5f7d35baaefb1af6d898600c8@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T174000Z
 DTEND:20261125T194000Z
 SUMMARY:Football · Sabah / FC Barcelone (Canal+ Live 2)
@@ -353,7 +461,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:87224c8a98d8364aedbb715a00005ec612642435@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T174700Z
 DTEND:20261125T194700Z
 SUMMARY:Football · Slavia Prague / Villarreal (Canal+ Live 3)
@@ -368,7 +476,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e512c98b0f2ad044e97942c0e3e380f284f0127e@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T191500Z
 DTEND:20261125T211500Z
 SUMMARY:Basket-ball · Olympiacos Piraeus / Hapoel IBI Tel Aviv (EuroLeague
@@ -383,7 +491,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:8530b335be32cb0af0954fe6d5ab2222247e68a3@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T193000Z
 DTEND:20261125T213000Z
 SUMMARY:Basket-ball · Kosner Baskonia Vitoria-Gasteiz / Anadolu Efes Istan
@@ -398,7 +506,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:9b80c9421859ae7707ec02b2352dea6ce684d7c0@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T194500Z
 DTEND:20261125T214500Z
 SUMMARY:Basket-ball · Real Madrid / Zalgiris Kaunas (EuroLeague TV)
@@ -412,7 +520,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:2dd8f235370dd80e283b5312003c11cf283d4b38@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T194500Z
 DTEND:20261125T214500Z
 SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 2)
@@ -427,7 +535,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:6ca505802b350b2bdd599ee66d4d7bfddb2a49ce@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T195500Z
 DTEND:20261125T215500Z
 SUMMARY:Football · Sporting Club Portugal / Manchester United (Canal+ Live
@@ -446,7 +554,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:745552ab75fc1198f558e805802c4c438ca36b08@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T195500Z
 DTEND:20261125T215500Z
 SUMMARY:Football · Inter Milan / Stuttgart (Canal+ Live 5)
@@ -464,7 +572,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d3ebe0da55dfe7396c700e2bf1e3022dd2b2c5ec@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T195500Z
 DTEND:20261125T215500Z
 SUMMARY:Football · Atlético Madrid / Viking Stavanger (Canal+ Live 6)
@@ -482,7 +590,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:5ee28b18a59b82efb7581637aaa1264dbb195ebc@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T195500Z
 DTEND:20261125T215500Z
 SUMMARY:Football · Chakhtior Donetsk / Fenerbahçe (Canal+ Live 7)
@@ -500,7 +608,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:7fc835906944094a026826a2a23974cead9f4937@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T195800Z
 DTEND:20261125T220000Z
 SUMMARY:Football · La grande soirée Ligue des Champions (La chaine l’É
@@ -515,7 +623,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:7e61130acfdc9dfacef3e2d3a7b405fd93af59de@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T200000Z
 DTEND:20261125T214700Z
 SUMMARY:Football · Paris-SG / AS Roma (Canal+)
@@ -530,7 +638,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:5652cd3bebcd693f89174590a9adb605073c3830@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T200000Z
 DTEND:20261125T220000Z
 SUMMARY:Football · Paris-SG / AS Roma (Canal+ Live 1)
@@ -546,8 +654,23 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:2cdaf8b408665cbec1084966071a672ad6d25522@programme-tv-sport
+DTSTAMP:20261121T123718Z
+DTSTART:20261125T200000Z
+DTEND:20261125T220000Z
+SUMMARY:Football · Football : Ligue des champions (Canal+ Live 2)
+DESCRIPTION:Football. Ligue des champions. 5e journée. — Ligue des champ
+ ions. 5e journée.
+LOCATION:Canal+ Live 2
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:616ecfd3240c94b74a4e4cce102fe4fd907a98fe@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261125T200700Z
 DTEND:20261125T220700Z
 SUMMARY:Football · Club Bruges / Liverpool (Canal+ Live 3)
@@ -562,7 +685,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:859565508f33152c971c66cdbb98e16cb8abdcd2@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261126T023000Z
 DTEND:20261126T053000Z
 SUMMARY:Hockey sur glace · Hockey sur glace : NHL (beIN SPORTS MAX 4)
@@ -576,8 +699,24 @@ DESCRIPTION:Bientôt à la TV
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:7ead568ae2bd8b7584c0faa0d3246478dffc3205@programme-tv-sport
+DTSTAMP:20261121T123718Z
+DTSTART:20261126T070000Z
+DTEND:20261126T084500Z
+SUMMARY:Basket-ball · Basket-ball : Euroligue masculine (beIN SPORTS 3)
+DESCRIPTION:Anadolu Efes Istanbul / ASVEL Lyon-Villeurbanne. Euroligue masc
+ uline. 13e journée. — Euroligue masculine. 13e journée. Anadolu Efes I
+ stanbul / ASVEL Lyon-Villeurbanne.
+LOCATION:beIN SPORTS 3
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT15M
+DESCRIPTION:Bientôt à la TV
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:3dee1ff39de5dddf4e6f9379bd0cb7e6b4b0c9ba@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261126T100500Z
 DTEND:20261126T115800Z
 SUMMARY:Football · Multiplex (Canal+ Foot)
@@ -592,7 +731,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:970a53d72893088fa87a06341bf72a85bbdcb302@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261127T070000Z
 DTEND:20261127T084500Z
 SUMMARY:Basket-ball · Besiktas / Paris Basketball (beIN SPORTS 3)
@@ -610,7 +749,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:7d39c561fdf0e2f97b6def4fc05a1ce4b7859044@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261127T090000Z
 DTEND:20261127T110000Z
 SUMMARY:Football · Nantes / Grenoble (beIN SPORTS 2)
@@ -628,7 +767,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:75e8b309d305386e688f75f33dee353b7d4ac61b@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261127T204500Z
 DTEND:20261127T223000Z
 SUMMARY:Basket-ball · Lyon-Villeurbanne / Olimpia Milan (beIN SPORTS 1)
@@ -646,7 +785,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:8cb3d43e21bed0abd2864d4e3eaab252bee60397@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261128T003000Z
 DTEND:20261128T023000Z
 SUMMARY:Football · Nantes / Grenoble (beIN SPORTS 1)
@@ -661,7 +800,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:6341fa9d899ab4e057812db5065dc86ccf210727@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261203T173000Z
 DTEND:20261203T193000Z
 SUMMARY:Basket-ball · Anadolu Efes Istanbul / Valencia Basket (EuroLeague 
@@ -676,7 +815,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e82966fb8c6446d785c39afe81715f5961b9d070@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261203T174500Z
 DTEND:20261203T194500Z
 SUMMARY:Basket-ball · Fenerbahce Tarfin Istanbul / Crvena Zvezda Meridianb
@@ -691,7 +830,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ca9909b5cfcc9967ff0291505727fb964d2fdb59@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261203T184500Z
 DTEND:20261203T204500Z
 SUMMARY:Basket-ball · Hapoel IBI Tel Aviv / Armani Olimpia Milan (EuroLeag
@@ -706,7 +845,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:079196a1a7de44c66bcf518d98ceb950e15abf62@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261203T190000Z
 DTEND:20261203T210000Z
 SUMMARY:Basket-ball · FC Bayern Munich / Paris Basketball (EuroLeague TV)
@@ -720,7 +859,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:938cbe5371ef8067e1a95a91eec9c905b81d5cff@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261203T194500Z
 DTEND:20261203T214500Z
 SUMMARY:Basket-ball · Real Madrid / FC Barcelona (EuroLeague TV)
@@ -734,7 +873,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:0f062219d0e709fe228cbebf89d18a60900962a2@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261203T200000Z
 DTEND:20261203T220000Z
 SUMMARY:Basket-ball · Virtus Bologna / Partizan Mozzart Bet Belgrade (Euro
@@ -749,7 +888,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:a2b8288a8e476c7c45350fdfb99c15602e396a5f@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261204T170000Z
 DTEND:20261204T190000Z
 SUMMARY:Basket-ball · Besiktas Fuzul Istanbul / Panathinaikos AKTOR Athens
@@ -764,7 +903,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:eb1e633a44c377085b8650fff62428479c86d3a1@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261204T180000Z
 DTEND:20261204T200000Z
 SUMMARY:Basket-ball · Zalgiris Kaunas / Dubai Basketball (EuroLeague TV)
@@ -778,7 +917,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d73160ee18d7f823280027a664f29619d72f30a8@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261204T191500Z
 DTEND:20261204T211500Z
 SUMMARY:Basket-ball · Olympiacos Piraeus / LDLC ASVEL Villeurbanne (EuroLe
@@ -793,7 +932,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dac26c1363d271cedbf4a699de74642e144671fd@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261204T193000Z
 DTEND:20261204T213000Z
 SUMMARY:Basket-ball · Kosner Baskonia Vitoria-Gasteiz / Maccabi Rapyd Tel 
@@ -808,7 +947,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:a79bba1ccaedec17f4830626bed5f781659324b8@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261210T174500Z
 DTEND:20261210T194500Z
 SUMMARY:Basket-ball · Fenerbahce Tarfin Istanbul / Anadolu Efes Istanbul (
@@ -823,7 +962,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bf384f38342da1497a35609f03de9d239ca4003a@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261210T180000Z
 DTEND:20261210T200000Z
 SUMMARY:Basket-ball · Zalgiris Kaunas / Kosner Baskonia Vitoria-Gasteiz (E
@@ -838,7 +977,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c0b76fb8231353f50e6069229c12e6df89200b34@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261210T184500Z
 DTEND:20261210T204500Z
 SUMMARY:Basket-ball · Hapoel IBI Tel Aviv / LDLC ASVEL Villeurbanne (EuroL
@@ -853,7 +992,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:5e3523a4f59493706b17acebadd18ad7d890657b@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261210T193000Z
 DTEND:20261210T213000Z
 SUMMARY:Basket-ball · Valencia Basket / Crvena Zvezda Meridianbet Belgrade
@@ -868,7 +1007,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:5bb4bb2fb077d18d8685037f11695db7af2cb46e@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261210T193000Z
 DTEND:20261210T213000Z
 SUMMARY:Basket-ball · Armani Olimpia Milan / FC Bayern Munich (EuroLeague 
@@ -883,7 +1022,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:c52d628dc891c3f1638e291e66fc6887fe18cc27@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261210T194500Z
 DTEND:20261210T214500Z
 SUMMARY:Basket-ball · Paris Basketball / Real Madrid (EuroLeague TV)
@@ -897,7 +1036,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:8b8d8d60933e130f8314f468733085fbe4d6325f@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261211T160000Z
 DTEND:20261211T180000Z
 SUMMARY:Basket-ball · Dubai Basketball / Besiktas Fuzul Istanbul (EuroLeag
@@ -912,7 +1051,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e7c82cd11832e3d17659334f1b6d07ea4e1d9e24@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261211T191500Z
 DTEND:20261211T211500Z
 SUMMARY:Basket-ball · Panathinaikos AKTOR Athens / Olympiacos Piraeus (Eur
@@ -927,7 +1066,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:01f15690d9f0de81d4fe2dba719d1028c0e4bde1@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261211T193000Z
 DTEND:20261211T213000Z
 SUMMARY:Basket-ball · Virtus Bologna / Maccabi Rapyd Tel Aviv (EuroLeague 
@@ -942,7 +1081,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:f7aea5944f676388e56e6d16ad580f243dd80090@programme-tv-sport
-DTSTAMP:20261121T013005Z
+DTSTAMP:20261121T123718Z
 DTSTART:20261211T194500Z
 DTEND:20261211T214500Z
 SUMMARY:Basket-ball · Partizan Mozzart Bet Belgrade / FC Barcelona (EuroLe
